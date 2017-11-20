@@ -1,7 +1,7 @@
 # game-functions
 Library of re-useable game functions to build web browser HTML5 games.
 
-"Do one thing and do it well" from [https://www.sitepoint.com/design-and-build-your-own-javascript-library/](Sitepoint)
+"Do one thing and do it well" from [Sitepoint](https://www.sitepoint.com/design-and-build-your-own-javascript-library/)
 
 ## Install
 ```
@@ -19,4 +19,4 @@ Each function does just one thing and tries to do it well.
 Each function is indenpendent from other functions.
 
 ## License
-This code is free to use for all purposes. For more details, see [LICENSE](GNU General Public License, version 3).
+This code is free to use for all purposes. For more details, see [GNU General Public License, version 3](LICENSE).
