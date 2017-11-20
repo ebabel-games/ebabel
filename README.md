@@ -1,6 +1,9 @@
 # game-functions
 Library of re-useable game functions to build web browser HTML5 games.
 
+## Current status
+Not ready to be used yet, this code is being developed.
+
 ## Install
 ```
 bower install ebabel-eu/game-functions
@@ -9,6 +12,11 @@ bower install ebabel-eu/game-functions
 ## Usage
 // todo: define how to use this library.
 
+## Build from source
+```
+npm install
+npm run build
+```
 
 ## Unit tests
 ```
