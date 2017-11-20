@@ -18,9 +18,9 @@ Each function is indenpendent from other functions.
 
 ## Quotes
 
-"Do one thing and do it well" [Sitepoint](https://www.sitepoint.com/design-and-build-your-own-javascript-library/)
+"Do one thing and do it well", [Sitepoint](https://www.sitepoint.com/design-and-build-your-own-javascript-library/).
 
-"Do more with less" [codementor.io](https://www.codementor.io/chimeremezeukah/build-a-reusable-javascript-library-du1086d7l)
+"Do more with less", [Chimeremeze Ukah](https://www.codementor.io/chimeremezeukah/build-a-reusable-javascript-library-du1086d7l).
 
 ## License
 This code is free to use for all purposes. For more details, see [GNU General Public License, version 3](LICENSE).
