@@ -4,7 +4,8 @@
   "description": "Library of re-useable game functions to build web browser HTML5 games.",
   "main": "src/index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "build": "./node_modules/webpack/bin/webpack.js -p"
   },
   "repository": {
     "type": "git",
