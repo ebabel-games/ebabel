@@ -1,0 +1,24 @@
+{
+  "name": "game-functions",
+  "version": "1.0.0",
+  "description": "Library of re-useable game functions to build web browser HTML5 games.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebabel-eu/game-functions.git"
+  },
+  "keywords": [
+    "games",
+    "library",
+    "javascript"
+  ],
+  "author": "Nadjib Amar <hello@ebabel.eu> (http://ebabel.eu/)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ebabel-eu/game-functions/issues"
+  },
+  "homepage": "https://github.com/ebabel-eu/game-functions#readme"
+}
