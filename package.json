@@ -2,7 +2,7 @@
   "name": "game-functions",
   "version": "1.0.0",
   "description": "Library of re-useable game functions to build web browser HTML5 games.",
-  "main": "src/index.js",
+  "main": "src/index.es6",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
     "build": "./node_modules/webpack/bin/webpack.js -p"

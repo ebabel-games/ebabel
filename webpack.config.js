@@ -21,7 +21,7 @@ module.exports = {
     library: process.env.NAME,
     libraryTarget: process.env.TARGET,
     path: __dirname,
-    filename: (PROD) ? 'build/game-functions.min.js' : 'build/game-functions.js'
+    filename: (PROD) ? 'dist/game-functions.min.js' : 'dist/game-functions.js'
   },
   module: {
     loaders: [
