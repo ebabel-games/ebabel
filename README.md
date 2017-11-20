@@ -9,6 +9,12 @@ bower install ebabel-eu/game-functions
 ## Usage
 // todo: define how to use this library.
 
+
+## Unit tests
+```
+npm test
+```
+
 ## Design principles
 This library has no dependencies when executed in a browser. It's written with plain javascript and meant to be easily used in the context of a modern, standard compliant web browser.
 

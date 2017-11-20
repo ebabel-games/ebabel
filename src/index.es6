@@ -9,10 +9,6 @@ class randomNumber {
   toInt() {
     return Math.floor(this.value);
   }
-
-  val() {
-    return this.value;
-  }
 }
 
 module.exports = (max, min) => {
