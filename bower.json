@@ -1,5 +1,6 @@
 {
   "name": "game-functions",
+  "version": "1.0.0",
   "homepage": "https://github.com/ebabel-eu/game-functions",
   "authors": [
     "Nadjib Amar <hello@ebabel.eu>"
@@ -11,6 +12,10 @@
     "library",
     "javascript"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ebabel-eu/game-functions.git"
+  },
   "license": "GPL-3.0",
   "ignore": [
     "**/.*",
