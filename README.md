@@ -9,4 +9,6 @@ Library of re-useable game functions to build web browser HTML5 games.
 bower install ebabel-eu/game-functions
 ```
 
+## License
 
+This code is free to use for all purposes. For more details, see [LICENSE](GNU General Public License, version 3).
