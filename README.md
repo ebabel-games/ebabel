@@ -1,8 +1,6 @@
 # game-functions
 Library of re-useable game functions to build web browser HTML5 games.
 
-"Do one thing and do it well" from [Sitepoint](https://www.sitepoint.com/design-and-build-your-own-javascript-library/)
-
 ## Install
 ```
 bower install ebabel-eu/game-functions
@@ -17,6 +15,12 @@ This library has no dependencies when executed in a browser. It's written with p
 Each function does just one thing and tries to do it well. 
 
 Each function is indenpendent from other functions.
+
+## Quotes
+
+"Do one thing and do it well" [Sitepoint](https://www.sitepoint.com/design-and-build-your-own-javascript-library/)
+
+"Do more with less" [codementor.io](https://www.codementor.io/chimeremezeukah/build-a-reusable-javascript-library-du1086d7l)
 
 ## License
 This code is free to use for all purposes. For more details, see [GNU General Public License, version 3](LICENSE).
