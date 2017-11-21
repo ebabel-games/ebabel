@@ -21,7 +21,7 @@ const randomList = (input) => {
   const rest = source
     .slice(0)
     .map(item => {
-      if (typeof item === 'object') {
+      if (item instanceof Object) {
         return JSON.stringify(item);
       }
       return item;
