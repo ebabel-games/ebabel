@@ -5,13 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Demo</title>
+
+  <style>
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    button {
+      font-size: 2em;
+      cursor: pointer;
+      margin: 0 .5em .5em 0;
+    }
+
+    .dices button {
+      width: 2em;
+      height: 2em;
+    }
+
+    .reset {
+      padding: .25em 1em;
+    }
+  </style>
 </head>
 <body>
   <script src="../dist/game-functions.js"></script>
 
+  <h1>randomNumber: roll different dices</h1>
+
+  <div class="dices">
+    <button>4</button>
+    <button>6</button>
+    <button>8</button>
+    <button>10</button>
+    <button>20</button>
+  </div>
+
+  <p>Results</p>
+  <ul id="results">
+  </ul>
+
+  <button class="reset">Reset</button>
+  
   <script>
-    const dice = window['game-functions'](7, 1).toInt();
-    console.log(dice);
+    const results = document.getElementById('results');
+
+    const displayResult = (max, result) => {
+      const li = document.createElement('li');
+      li.appendChild(document.createTextNode(`${max} sided dice: ${result}.`))
+      results.appendChild(li);
+    };
+
+    const clearAllResults = () => {
+      results.innerText = '';
+    };
+
+    document.querySelectorAll('.dices button').forEach(button => {
+      button.addEventListener('click', (e) => {
+        const max = Number.parseInt(e.currentTarget.innerHTML);
+        const result = window['game-functions'](max, 1).toInt();
+        displayResult(max, result);
+      });
+    });
+
+    document.querySelectorAll('.reset').forEach(button => {
+      button.addEventListener('click', clearAllResults);
+    });
   </script>
 </body>
 </html>
