@@ -16,6 +16,53 @@
       font-size: 2em;
       cursor: pointer;
       margin: 0 .5em .5em 0;
+      color: white;
+    }
+
+    #results {
+      padding-left: 0;
+    }
+
+    #results:after {
+      content: ' ';
+      display: block;
+      clear: both;
+    }
+
+    #results li {
+      color: white;
+      list-style: none;
+      line-height: 22px;
+      padding: .25em .5em;
+      margin: 0 .5em .5em 0;
+      float: left;
+      border-radius: 1em;
+      border: solid 1px black;
+      width: 16px;
+      height: 22px;
+      text-align: center;
+    }
+
+    button[data-color="yellow"],
+    #results li.yellow {
+      background-color: yellow;
+      color: black;
+    }
+    button[data-color="red"],
+    #results li.red {
+      background-color: red;
+    }
+    button[data-color="orange"],
+    #results li.orange {
+      background-color: orange;
+    }
+    button[data-color="blue"],
+    #results li.blue {
+      background-color: blue;
+    }
+    button[data-color="violet"],
+    #results li.violet {
+      background-color: violet;
     }
 
     .dices button {
@@ -25,6 +72,7 @@
 
     .reset {
       padding: .25em 1em;
+      color: black;
     }
   </style>
 </head>
@@ -34,11 +82,11 @@
   <h1>randomNumber: roll different dices</h1>
 
   <div class="dices">
-    <button>4</button>
-    <button>6</button>
-    <button>8</button>
-    <button>10</button>
-    <button>20</button>
+    <button data-color="yellow">4</button>
+    <button data-color="red">6</button>
+    <button data-color="orange">8</button>
+    <button data-color="blue">10</button>
+    <button data-color="violet">20</button>
   </div>
 
   <p>Results</p>
@@ -50,9 +98,11 @@
   <script>
     const results = document.getElementById('results');
 
-    const displayResult = (max, result) => {
+    const displayResult = (max, result, dice, color) => {
       const li = document.createElement('li');
-      li.appendChild(document.createTextNode(`${max} sided dice: ${result}.`))
+      li.className = color;
+      li.appendChild(document.createTextNode(result));
+      
       results.appendChild(li);
     };
 
@@ -62,9 +112,16 @@
 
     document.querySelectorAll('.dices button').forEach(button => {
       button.addEventListener('click', (e) => {
-        const max = Number.parseInt(e.currentTarget.innerHTML);
-        const result = window['game-functions'](max, 1).toInt();
-        displayResult(max, result);
+        let max = Number.parseInt(e.currentTarget.innerHTML);
+        const color = e.currentTarget.attributes.getNamedItem('data-color').value;
+
+        // Note: 10 sided dice goes from 0 to 9, whereas the other dices go from 1 to their max value.
+        const min = (max === 10) ? 0 : 1;
+        max = (max === 10) ? 9 : max;
+
+        const result = window['game-functions'](max, min).toInt();
+
+        displayResult(max, result, e.currentTarget.innerHTML, color);
       });
     });
 

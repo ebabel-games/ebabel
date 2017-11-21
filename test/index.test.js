@@ -27,6 +27,14 @@ describe('randomNumber', () => {
     Number.isInteger(randomNumber(10, 3).toInt()).should.be.true;
   });
 
+  it('returns 0 when the max is 0 and min is not specified', () => {
+    randomNumber(0).value.should.be.equal(0);
+  });
+
+  it('returns 0 when both max and min are set to 0', () => {
+    randomNumber(0, 0).value.should.be.equal(0);
+  });
+
   it('reasonably spreads 100000 random results for a six sided dice', () => {
     // Total number of times the six sided dice is thrown.
     const totalThrown = 100000;
