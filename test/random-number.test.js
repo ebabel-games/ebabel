@@ -35,6 +35,13 @@ describe('randomNumber', () => {
     randomNumber(0, 0).value.should.be.equal(0);
   });
 
+  it('throws an error when min is greater than max', () => {
+    (() => {
+      randomNumber(3, 4);
+      model.get('z');
+    }).should.throw('min cannot be greater than max.');
+  });
+
   it('reasonably spreads 100000 random results for a six sided dice', () => {
     // Total number of times the six sided dice is thrown.
     const totalThrown = 100000;
