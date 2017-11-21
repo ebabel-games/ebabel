@@ -11,7 +11,17 @@ bower install ebabel-eu/ebabel-library
 ```
 
 ### Usage in your own game
-// todo: define how to use this library.
+
+See [demo/index.html](demos) for how to use this library.
+
+#### randomNumber
+```
+<script src="dist/ebabel-library.js"></script>
+
+<script>
+  
+</script>
+```
 
 ### License
 This code is free to use for all purposes. For more details, see [GNU General Public License, version 3](LICENSE).
