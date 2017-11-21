@@ -14,13 +14,22 @@ bower install ebabel-eu/ebabel-library
 
 See [demo/index.html](demos) for how to use this library.
 
+This library can be used in ES5 or ES6+
+
 #### randomNumber
 ```
+// ES5
 <script src="dist/ebabel-library.js"></script>
-
 <script>
-  
+  var result = window['ebabel-library'].randomNumber(7, 1).toInt()
 </script>
+```
+
+```
+// ES6+
+import { randomNumber } from 'ebabel-library';
+
+const result = randomNumber(7, 1).toInt();
 ```
 
 ### License
