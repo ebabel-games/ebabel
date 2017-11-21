@@ -1,20 +1,19 @@
 # ebabel-library
 Library of re-useable game functions to build web browser HTML5 games.
 
-## Current status
-Not ready to be used yet, this code is being developed.
+Current status: not ready to be used yet, this code is being developed.
 
 ## Use for your own game
 
-## Install as dependency for your own game
+### Install as dependency for your own game
 ```
 bower install ebabel-eu/ebabel-library
 ```
 
-## Usage in your own game
+### Usage in your own game
 // todo: define how to use this library.
 
-## License
+### License
 This code is free to use for all purposes. For more details, see [GNU General Public License, version 3](LICENSE).
 
 
