@@ -7,7 +7,7 @@ Current status: not ready to be used yet, this code is being developed.
 
 ### Install as dependency for your own game
 ```
-bower install ebabel-eu/ebabel-library
+bower install ebabel-library
 ```
 
 ### Usage in your own game
