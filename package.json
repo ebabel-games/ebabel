@@ -16,7 +16,7 @@
     ]
   },
   "scripts": {
-    "test": "./node_modules/.bin/nyc --reporter=text --reporter=html ./node_modules/.bin/mocha check-coverage tap test/*.test.js",
+    "test": "./node_modules/.bin/nyc --reporter=text --reporter=html ./node_modules/.bin/mocha test/*.test.js",
     "build": "./node_modules/.bin/webpack -p"
   },
   "repository": {
