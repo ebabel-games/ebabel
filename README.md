@@ -12,7 +12,7 @@ bower install ebabel-eu/ebabel-library
 
 ### Usage in your own game
 
-See [demo/index.html](demos) for how to use this library.
+See [demos](demo/index.html) for how to use this library.
 
 This library can be used in ES5 or ES6+
 
