@@ -1,13 +1,13 @@
-// import chai as our assertion library
+// Import chai as our assertion library.
 import chai from 'chai';
 
-//require jsdom-global and run
+// Require jsdom-global and run.
 require('jsdom-global')()
 
-// import our library
+// Import module to test.
 import { randomNumber } from '../src/';
 
-// initialize chai should
+// Initialize chai should.
 chai.should();
 
 describe('randomNumber', () => {
