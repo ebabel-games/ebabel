@@ -1,20 +1,20 @@
 "use strict";
 
-class randomNumber {
-  constructor(max, min = 0) {
-    if (min > max) {
-      throw new Error('min cannot be greater than max.');
-    }
-
-    this.min = min;
-    this.value = Math.random() * (max - min) + min;
+const randomNumber = (max, min = 0) => {
+  if (min > max) {
+    throw new Error('min cannot be greater than max.');
   }
 
-  toInt() {
-    return Math.floor(this.value);
-  }
+  const value = Math.random() * (max - min) + min;
+
+  const toInt = () => Math.floor(value);
+
+  return {
+    value,
+    toInt,
+  };
 }
 
-module.exports = (max, min) => {
-  return new randomNumber(max, min);
+export {
+  randomNumber,
 };

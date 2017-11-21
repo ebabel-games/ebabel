@@ -5,7 +5,7 @@ import chai from 'chai';
 require('jsdom-global')()
 
 // import our library
-import randomNumber from '../src/index.es6';
+import { randomNumber } from '../src/';
 
 // initialize chai should
 chai.should();
