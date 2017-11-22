@@ -1,8 +1,6 @@
 # ebabel-library
 Library of re-useable game functions to build web browser HTML5 games.
 
-Current status: not ready to be used yet, this code is being developed.
-
 ## Use for your own game
 
 ### Install as dependency for your own game
