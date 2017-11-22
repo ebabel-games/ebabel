@@ -19,7 +19,7 @@ This library can be used in ES5 or ES6+
 #### randomNumber
 ```
 // ES5
-<script src="dist/ebabel-library.js"></script>
+<script src="dist/ebabel-library.min.js"></script>
 <script>
   var result = window['ebabel-library'].randomNumber(7, 1).toInt()
 </script>
@@ -45,6 +45,8 @@ Fork the repository and once you have made your code changes, raise a pull reque
 npm install
 npm run build
 ```
+
+The build is either for development or production. Update the value of NODE_ENV in the `.env` file.
 
 ### Unit tests
 ```
