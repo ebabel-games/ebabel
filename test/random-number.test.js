@@ -50,7 +50,7 @@ describe('randomNumber', () => {
     const optimum = 1/6;
 
     // Acceptable percentage deviation from optimum.
-    const acceptableDeviation = 2;  // i.e. 2% here.
+    const acceptableDeviation = 3;  // i.e. 3% here.
 
     // Flag default value: the spread is reasonable, i.e. percentageDeviation isn't too great.
     let isSpreadReasonable = true;
