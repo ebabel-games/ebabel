@@ -8,6 +8,65 @@
 
     <link rel="stylesheet" href="styles.css">
 
+    <style>
+      button {
+        font-size: 1.5em;
+        margin: 0 .5em .5em 0;
+        color: white;
+      }
+
+      #results {
+        padding-left: 0;
+      }
+
+      #results:after {
+        content: ' ';
+        display: block;
+        clear: both;
+      }
+
+      #results li {
+        color: white;
+        list-style: none;
+        line-height: 22px;
+        padding: .25em .5em;
+        margin: 0 .5em .5em 0;
+        float: left;
+        border-radius: 1em;
+        border: solid 1px black;
+        width: 16px;
+        height: 22px;
+        text-align: center;
+      }
+
+      button[data-color="yellow"],
+      #results li.yellow {
+        background-color: yellow;
+        color: black;
+      }
+      button[data-color="red"],
+      #results li.red {
+        background-color: red;
+      }
+      button[data-color="orange"],
+      #results li.orange {
+        background-color: orange;
+      }
+      button[data-color="blue"],
+      #results li.blue {
+        background-color: blue;
+      }
+      button[data-color="violet"],
+      #results li.violet {
+        background-color: violet;
+      }
+
+      .dices button {
+        width: 2em;
+        height: 2em;
+      }
+    </style>
+
     <script src="../dist/ebabel-library.js"></script>
   </head>
   <body>
@@ -28,7 +87,7 @@
       <ul id="results">
       </ul>
 
-      <button class="reset">Reset</button>
+      <button id="reset">Reset</button>
     </div>
 
     <script>
@@ -64,9 +123,7 @@
         });
       });
 
-      document.querySelectorAll('.reset').forEach(button => {
-        button.addEventListener('click', clearAllResults);
-      });
+      document.getElementById('reset').addEventListener('click', clearAllResults);
     </script>
   </body>
 </html>

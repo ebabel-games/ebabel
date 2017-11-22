@@ -74,14 +74,17 @@ window["ebabel-library"] =
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.randomList = exports.randomNumber = undefined;
+exports.guid = exports.randomList = exports.randomNumber = undefined;
 
 var _randomNumber = __webpack_require__(1);
 
 var _randomList = __webpack_require__(2);
 
+var _guid = __webpack_require__(3);
+
 exports.randomNumber = _randomNumber.randomNumber;
 exports.randomList = _randomList.randomList;
+exports.guid = _guid.guid;
 
 /***/ }),
 /* 1 */
@@ -178,6 +181,26 @@ var randomList = function randomList(input) {
 };
 
 exports.randomList = randomList;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var s4 = function s4() {
+  return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+};
+
+var guid = function guid() {
+  return "" + s4() + s4() + "-" + s4() + "-" + s4() + "-" + s4() + "-" + s4() + s4() + s4();
+};
+
+exports.guid = guid;
 
 /***/ })
 /******/ ]);
