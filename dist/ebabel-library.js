@@ -1,2 +1,184 @@
-window["ebabel-library"]=function(r){function e(n){if(t[n])return t[n].exports;var o=t[n]={i:n,l:!1,exports:{}};return r[n].call(o.exports,o,o.exports,e),o.l=!0,o.exports}var t={};return e.m=r,e.c=t,e.d=function(r,t,n){e.o(r,t)||Object.defineProperty(r,t,{configurable:!1,enumerable:!0,get:n})},e.n=function(r){var t=r&&r.__esModule?function(){return r.default}:function(){return r};return e.d(t,"a",t),t},e.o=function(r,e){return Object.prototype.hasOwnProperty.call(r,e)},e.p="",e(e.s=0)}([function(r,e,t){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.randomList=e.randomNumber=void 0;var n=t(1),o=t(2);e.randomNumber=n.randomNumber,e.randomList=o.randomList},function(r,e,t){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n=function(r){var e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0;if(e>r)throw new Error("min cannot be greater than max.");var t=Math.random()*(r-e)+e;return{value:t,toInt:function(){return Math.floor(t)}}};e.randomNumber=n},function(r,e,t){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n=function(r){var e=r.source,t=r.max;if(!e||0===e.length||0===t)return{list:[],rest:[]};for(var n=e.slice(0).map(function(r){return r instanceof Object?JSON.stringify(r):r}),o=[],u=0;u<t;u++){var a=n[Math.floor(Math.random()*(n.length-1))];n.splice(n.indexOf(a),1),o.push(a)}return{list:o,rest:n}};e.randomList=n}]);
+window["ebabel-library"] =
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.randomList = exports.randomNumber = undefined;
+
+var _randomNumber = __webpack_require__(1);
+
+var _randomList = __webpack_require__(2);
+
+exports.randomNumber = _randomNumber.randomNumber;
+exports.randomList = _randomList.randomList;
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * `random-number`
+ * Returns a random integer number from 0 to max or from min to max (max is non-inclusive).
+ * max: Number
+ * min?: Number
+ */
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var randomNumber = function randomNumber(max) {
+  var min = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+
+  if (min > max) {
+    throw new Error('min cannot be greater than max.');
+  }
+
+  var value = Math.random() * (max - min) + min;
+
+  var toInt = function toInt() {
+    return Math.floor(value);
+  };
+
+  return {
+    value: value,
+    toInt: toInt
+  };
+};
+
+exports.randomNumber = randomNumber;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * `random-list`
+ * Returns the subset of a list of x elements from a larger source list.
+ */
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var randomList = function randomList(input) {
+  var source = input.source,
+      max = input.max;
+
+
+  if (!source || source.length === 0 || max === 0) {
+    return {
+      list: [],
+      rest: []
+    };
+  }
+
+  // Process the source.
+  var rest = source.slice(0).map(function (item) {
+    if (item instanceof Object) {
+      return JSON.stringify(item);
+    }
+    return item;
+  });
+
+  // Start with an empty list that will be output.
+  var list = [];
+
+  for (var i = 0; i < max; i++) {
+    // Pick a random element.
+    var selection = rest[Math.floor(Math.random() * (rest.length - 1))];
+
+    // Remove the random element from the source that will be output in the rest.
+    rest.splice(rest.indexOf(selection), 1);
+
+    // Add the random element to the list that will be output.
+    list.push(selection);
+  }
+
+  // Output.
+  return {
+    list: list,
+    rest: rest
+  };
+};
+
+exports.randomList = randomList;
+
+/***/ })
+/******/ ]);
 //# sourceMappingURL=ebabel-library.js.map
