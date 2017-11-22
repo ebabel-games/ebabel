@@ -6,8 +6,15 @@ Current status: not ready to be used yet, this code is being developed.
 ## Use for your own game
 
 ### Install as dependency for your own game
+
+Bower
 ```
-bower install ebabel-library
+bower install --save ebabel-library
+```
+
+or, npm
+```
+npm install --save ebabel-library
 ```
 
 ### Usage in your own game
@@ -65,3 +72,9 @@ Each function is indenpendent from other functions.
 "Do one thing and do it well", [Sitepoint](https://www.sitepoint.com/design-and-build-your-own-javascript-library/).
 
 "Do more with less", [Chimeremeze Ukah](https://www.codementor.io/chimeremezeukah/build-a-reusable-javascript-library-du1086d7l).
+
+### npm and bower registries
+
+Pushing a new tag is enough to update the bower registry, only the initial setup was required.
+
+For npm, run `npm publish` to push a new tag version.
