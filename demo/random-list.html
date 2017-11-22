@@ -8,12 +8,95 @@
 
     <link rel="stylesheet" href="styles.css">
 
+    <style>
+      #select,
+      #howMany {
+        font-size: 16px;
+      }
+
+      #select {
+        font-size: inherit;
+        color: inherit;
+      }
+
+      #howMany {
+        width: 200px;
+      }
+    </style>
+
     <script src="../dist/ebabel-library.js"></script>
   </head>
   <body>
     <h1><a href="index.html">eBabel Library</a></h1>
     <div class="container">
-      
+      <h2>randomList demo</h2>
+      <p>Get a list of elements randomly selected from a source.</p>
+      <h3>All candidates</h3>
+      <ol id="source">
+        <li>Valantinus Dumitrescu</li>
+        <li>Keneweard Gillaumin</li>
+        <li>Hermolycus Lingens</li>
+        <li>Asbadus Fritsch</li>
+        <li>Wiebrand Jotten</li>
+        <li>Lauaxeta Boccasino</li>
+        <li>Rechiar Fitipaldi</li>
+        <li>Bilimer Cannavo</li>
+        <li>Euthalius Goulancourt</li>
+        <li>Estebe Melinte</li>
+        <li>Ruisko Celi</li>
+        <li>Berthar Seubering</li>
+        <li>Wyschardus Rallis</li>
+        <li>Strophius da Silva</li>
+        <li>Stielf della Corte</li>
+        <li>Iovivus Schottel</li>
+        <li>Dod Narbitz</li>
+        <li>Basbrun Klöpsch</li>
+        <li>Telephus Anguissola</li>
+        <li>Itys Munduarte</li>
+      </ol>
+      <input type="number" id="howMany" min="0" max="10" placeholder="How many winners?" value="5">
+      <button id="select">Select</button>
+
+      <h3>Winners</h3>
+      <ol id="winners"></ol>
+
+      <h3>Losers</h3>
+      <ol id="losers"></ol>
     </div>
+
+    <script>
+      const lib = window['ebabel-library'];
+      const randomList = lib.randomList;
+
+      const source = [];
+      
+      document.getElementById('source').querySelectorAll('li').forEach(li => {
+        source.push(li.innerText);
+      });
+
+      const updateList = (content, target) => {
+        target.innerText = '';
+        content.map(text => {
+          const li = document.createElement('li');
+          li.appendChild(document.createTextNode(text));
+          target.append(li);
+        });
+      };
+
+      const pickWinners = () => {
+        const howManyInput = document.getElementById('howMany');
+        let max = (isNaN(howManyInput.value)) ? 0 : parseInt(howManyInput.value);
+        max = (max > 20) ? 20 : max;
+        const result = randomList({
+          source,
+          max,
+        });
+
+        updateList(result.list, document.getElementById('winners'));
+        updateList(result.rest, document.getElementById('losers'));
+      };
+
+      document.getElementById('select').addEventListener('click', pickWinners);
+    </script>
   </body>
 </html>
