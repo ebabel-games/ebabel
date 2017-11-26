@@ -57,7 +57,7 @@ describe('randomNumber', () => {
 
     // Throw the six sided dice many times.
     new Array(totalThrown).fill(0)
-      .map(value => randomNumber(7, 1).toInt())
+      .map(value => randomNumber(6).toInt())
       // Sorting the raw results of all dice throws makes the reduce work at least 20% faster.
       // i.e. 77 to 80ms instead of 100 to 104 ms.
       .sort()
