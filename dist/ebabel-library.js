@@ -95,7 +95,7 @@ exports.guid = _guid.guid;
 
 /**
  * `random-number`
- * Returns a random integer number from 0 to max or from min to max (max is non-inclusive).
+ * Returns a random integer number from 0 to max or from min to max (min is non-inclusive).
  * max: Number
  * min?: Number
  */
@@ -113,7 +113,7 @@ var randomNumber = function randomNumber(max) {
   var value = Math.random() * (max - min) + min;
 
   var toInt = function toInt() {
-    return Math.floor(value);
+    return Math.ceil(value);
   };
 
   return {
