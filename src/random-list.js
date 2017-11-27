@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * `random-list`
+ * `randomList`
  * Returns the subset of a list of x elements from a larger source list.
  */
 const randomList = (input) => {

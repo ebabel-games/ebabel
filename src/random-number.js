@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * `random-number`
+ * `randomNumber`
  * Returns a random integer number from 0 to max or from min to max (min is non-inclusive).
  * max: Number
  * min?: Number

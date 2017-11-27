@@ -38,7 +38,6 @@ describe('randomNumber', () => {
   it('throws an error when min is greater than max', () => {
     (() => {
       randomNumber(3, 4);
-      model.get('z');
     }).should.throw('min cannot be greater than max.');
   });
 

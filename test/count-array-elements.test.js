@@ -5,7 +5,7 @@ import chai from 'chai';
 require('jsdom-global')()
 
 // Import module to test.
-//import { countArrayElements } from '../src/';
+import { countArrayElements } from '../src/';
 
 // Initialize chai should.
 chai.should();
@@ -21,8 +21,14 @@ describe('countArrayElements', () => {
       'pear',
     ]);
 
-    result.apple.should.be(2);
-    result.orange.should.be(1);
-    result.pear.should.be(3);
+    result.apple.should.be.equal(2);
+    result.orange.should.be.equal(1);
+    result.pear.should.be.equal(3);
+  });
+
+  it('throws an error when input array is missing', () => {
+    (() => {
+      countArrayElements();
+    }).should.throw('Missing array, so it is not possible to count members of that array.');
   });
 });
