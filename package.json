@@ -1,6 +1,6 @@
 {
   "name": "ebabel-library",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Library of re-useable game functions to build web browser HTML5 games.",
   "main": "src/index.js",
   "nyc": {
