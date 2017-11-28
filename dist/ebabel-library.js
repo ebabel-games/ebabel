@@ -74,7 +74,7 @@ window["ebabel-library"] =
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.guid = exports.randomList = exports.randomNumber = undefined;
+exports.countArrayElements = exports.guid = exports.randomList = exports.randomNumber = undefined;
 
 var _randomNumber = __webpack_require__(1);
 
@@ -82,9 +82,12 @@ var _randomList = __webpack_require__(2);
 
 var _guid = __webpack_require__(3);
 
+var _countArrayElements = __webpack_require__(4);
+
 exports.randomNumber = _randomNumber.randomNumber;
 exports.randomList = _randomList.randomList;
 exports.guid = _guid.guid;
+exports.countArrayElements = _countArrayElements.countArrayElements;
 
 /***/ }),
 /* 1 */
@@ -94,7 +97,7 @@ exports.guid = _guid.guid;
 
 
 /**
- * `random-number`
+ * `randomNumber`
  * Returns a random integer number from 0 to max or from min to max (min is non-inclusive).
  * max: Number
  * min?: Number
@@ -132,7 +135,7 @@ exports.randomNumber = randomNumber;
 
 
 /**
- * `random-list`
+ * `randomList`
  * Returns the subset of a list of x elements from a larger source list.
  */
 
@@ -196,11 +199,48 @@ var s4 = function s4() {
   return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
 };
 
+/**
+ * `guid`
+ * Returns a globally unique id string following the standard guid format.
+ */
 var guid = function guid() {
   return "" + s4() + s4() + "-" + s4() + "-" + s4() + "-" + s4() + "-" + s4() + s4() + s4();
 };
 
 exports.guid = guid;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * `countArrayElements`
+ * Returns an object that counts how many times each element is present in a given array.
+ */
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var countArrayElements = function countArrayElements(input) {
+  if (!Array.isArray(input)) {
+    throw new Error('Missing array, so it is not possible to count members of that array.');
+  }
+
+  var result = {};
+
+  input.sort().reduce(function (acc, val) {
+    return acc.set(val, 1 + (acc.get(val) || 0));
+  }, new Map()).forEach(function (value, key) {
+    result[key] = value;
+  });
+
+  return result;
+};
+
+exports.countArrayElements = countArrayElements;
 
 /***/ })
 /******/ ]);
