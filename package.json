@@ -29,6 +29,9 @@
     "javascript"
   ],
   "author": "Nadjib Amar <hello@ebabel.eu> (http://ebabel.eu/)",
+  "contributors": [
+    "gyroscopico (https://github.com/gyroscopico)"
+  ],
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/ebabel-eu/ebabel-library/issues"

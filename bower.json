@@ -3,7 +3,10 @@
   "version": "1.2.0",
   "homepage": "https://github.com/ebabel-eu/ebabel-library",
   "authors": [
-    "Nadjib Amar <hello@ebabel.eu>"
+    "Nadjib Amar <hello@ebabel.eu> (http://ebabel.eu/)"
+  ],
+  "contributors": [
+    "gyroscopico (https://github.com/gyroscopico)"
   ],
   "description": "Library of re-useable game functions to build web browser HTML5 games.",
   "main": "src/index.js",
