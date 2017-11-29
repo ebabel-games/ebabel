@@ -74,7 +74,7 @@ window["ebabel-library"] =
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Ido = exports.countArrayElements = exports.guid = exports.randomList = exports.randomNumber = undefined;
+exports.preventXss = exports.Ido = exports.countArrayElements = exports.guid = exports.randomList = exports.randomNumber = undefined;
 
 var _randomNumber = __webpack_require__(1);
 
@@ -86,11 +86,14 @@ var _countArrayElements = __webpack_require__(4);
 
 var _ido = __webpack_require__(5);
 
+var _preventXss = __webpack_require__(6);
+
 exports.randomNumber = _randomNumber.randomNumber;
 exports.randomList = _randomList.randomList;
 exports.guid = _guid.guid;
 exports.countArrayElements = _countArrayElements.countArrayElements;
 exports.Ido = _ido.Ido;
+exports.preventXss = _preventXss.preventXss;
 
 /***/ }),
 /* 1 */
@@ -261,12 +264,36 @@ var dateDifference = function dateDifference() {
   return Date.now() - new Date(Date.UTC(2014, 6, 10, 9, 45, 0));
 };
 
-// How many days since Ido died.
+/**
+ * `Ido`
+ * Returns a a string that commemorates how many days since Ido died.
+ */
 var Ido = function Ido() {
   return "\u2625 " + Math.floor(dateDifference() / 36e5 / 24) + " days.";
 };
 
 exports.Ido = Ido;
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * `preventXss`
+ * Processes an input to prevent Cross Site Scripting injection attacks (XSS). Returns a safe version of that input.
+ */
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var preventXss = function preventXss(input) {
+  return input.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+};
+
+exports.preventXss = preventXss;
 
 /***/ })
 /******/ ]);

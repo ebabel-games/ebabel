@@ -17,6 +17,6 @@ describe('preventXss', () => {
 
   it('transforms <script> html tag into non executable code that can be safely displayed', () => {
     preventXss('My name is <script>console.log(password)</script>')
-      .should.be.equal('My name is \u003Cscript\u003Econsole.log(password)\u003C/script\u003E');
+      .should.be.equal('My name is &lt;script&gt;console.log(password)&lt;/script&gt;');
   });
 });
