@@ -74,7 +74,7 @@ window["ebabel-library"] =
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.countArrayElements = exports.guid = exports.randomList = exports.randomNumber = undefined;
+exports.ido = exports.countArrayElements = exports.guid = exports.randomList = exports.randomNumber = undefined;
 
 var _randomNumber = __webpack_require__(1);
 
@@ -84,10 +84,13 @@ var _guid = __webpack_require__(3);
 
 var _countArrayElements = __webpack_require__(4);
 
+var _ido = __webpack_require__(5);
+
 exports.randomNumber = _randomNumber.randomNumber;
 exports.randomList = _randomList.randomList;
 exports.guid = _guid.guid;
 exports.countArrayElements = _countArrayElements.countArrayElements;
+exports.ido = _ido.ido;
 
 /***/ }),
 /* 1 */
@@ -241,6 +244,29 @@ var countArrayElements = function countArrayElements(input) {
 };
 
 exports.countArrayElements = countArrayElements;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// Number of days since 10th July 2014 at 9:45am.
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var dateDifference = function dateDifference() {
+  return Date.now() - new Date(Date.UTC(2014, 6, 10, 9, 45, 0));
+};
+
+// How many days since Ido died.
+var ido = function ido() {
+  return "\u2625 " + Math.floor(dateDifference() / 36e5 / 24) + " days.";
+};
+
+exports.ido = ido;
 
 /***/ })
 /******/ ]);
