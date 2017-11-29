@@ -17,6 +17,5 @@ describe('Ido', () => {
 
   it('returns a string that starts with ☥', () => {
     Ido().substring(0, 1).should.be.equal('☥');
-    console.log(Ido());
   });
 });

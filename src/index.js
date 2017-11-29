@@ -5,6 +5,7 @@ import { randomList } from './random-list.js';
 import { guid } from './guid.js';
 import { countArrayElements } from './count-array-elements';
 import { Ido } from './ido';
+import { preventXss } from './prevent-xss';
 
 export {
   randomNumber,
@@ -12,4 +13,5 @@ export {
   guid,
   countArrayElements,
   Ido,
+  preventXss,
 };
