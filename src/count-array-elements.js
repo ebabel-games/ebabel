@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * `countArrayElements`
@@ -14,7 +14,7 @@ const countArrayElements = (input) => {
   input
     .sort()
     .reduce((acc, val) => acc.set(val, 1 + (acc.get(val) || 0)), new Map())
-    .forEach((value, key) => { result[key] = value });
+    .forEach((value, key) => { result[key] = value; });
 
   return result;
 };

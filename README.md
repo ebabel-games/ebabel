@@ -58,6 +58,11 @@ The build is either for development or production. Update the value of NODE_ENV 
 npm test
 ```
 
+### Lint
+```
+npm run lint
+```
+
 ### Design principles
 This library has no dependencies when executed in a browser. It's written with plain javascript and meant to be easily used in the context of a modern, standard compliant web browser.
 
