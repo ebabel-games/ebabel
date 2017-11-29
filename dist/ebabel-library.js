@@ -74,7 +74,7 @@ window["ebabel-library"] =
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ido = exports.countArrayElements = exports.guid = exports.randomList = exports.randomNumber = undefined;
+exports.Ido = exports.countArrayElements = exports.guid = exports.randomList = exports.randomNumber = undefined;
 
 var _randomNumber = __webpack_require__(1);
 
@@ -90,7 +90,7 @@ exports.randomNumber = _randomNumber.randomNumber;
 exports.randomList = _randomList.randomList;
 exports.guid = _guid.guid;
 exports.countArrayElements = _countArrayElements.countArrayElements;
-exports.ido = _ido.ido;
+exports.Ido = _ido.Ido;
 
 /***/ }),
 /* 1 */
@@ -262,11 +262,11 @@ var dateDifference = function dateDifference() {
 };
 
 // How many days since Ido died.
-var ido = function ido() {
+var Ido = function Ido() {
   return "\u2625 " + Math.floor(dateDifference() / 36e5 / 24) + " days.";
 };
 
-exports.ido = ido;
+exports.Ido = Ido;
 
 /***/ })
 /******/ ]);

@@ -4,8 +4,8 @@
 const dateDifference = () => Date.now() - new Date(Date.UTC(2014,6,10,9,45,0));
 
 // How many days since Ido died.
-const ido = () => `☥ ${Math.floor(dateDifference() / 36e5 / 24)} days.`;
+const Ido = () => `☥ ${Math.floor(dateDifference() / 36e5 / 24)} days.`;
 
 export {
-  ido,
+  Ido,
 };
