@@ -63,6 +63,13 @@ npm test
 npm run lint
 ```
 
+### Generate source code documentation
+```
+npm run doc
+```
+
+Browse the html files from the generated `out` directory.
+
 ### Design principles
 This library has no dependencies when executed in a browser. It's written with plain javascript and meant to be easily used in the context of a modern, standard compliant web browser.
 

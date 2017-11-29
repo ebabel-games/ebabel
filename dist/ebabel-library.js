@@ -210,7 +210,7 @@ var s4 = function s4() {
  * Returns a globally unique id string following the standard guid format.
  */
 var guid = function guid() {
-  return "" + s4() + s4() + "-" + s4() + "-" + s4() + "-" + s4() + "-" + s4() + s4() + s4();
+  return '' + s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
 };
 
 exports.guid = guid;
@@ -269,7 +269,7 @@ var dateDifference = function dateDifference() {
  * Returns a a string that commemorates how many days since Ido died.
  */
 var Ido = function Ido() {
-  return "\u2625 " + Math.floor(dateDifference() / 36e5 / 24) + " days.";
+  return '\u2625 ' + Math.floor(dateDifference() / 36e5 / 24) + ' days.';
 };
 
 exports.Ido = Ido;

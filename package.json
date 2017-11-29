@@ -1,6 +1,6 @@
 {
   "name": "ebabel-library",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Library of re-useable game functions to build web browser HTML5 games.",
   "main": "src/index.js",
   "nyc": {
@@ -18,7 +18,8 @@
   "scripts": {
     "test": "./node_modules/.bin/nyc --reporter=text --reporter=html ./node_modules/.bin/mocha test/*.test.js",
     "build": "./node_modules/.bin/webpack --progress",
-    "lint": "./node_modules/.bin/eslint src/"
+    "lint": "./node_modules/.bin/eslint src/",
+    "doc": "./node_modules/.bin/jsdoc src/"
   },
   "repository": {
     "type": "git",
@@ -48,6 +49,7 @@
     "dotenv": "~4.0.0",
     "eslint": "~4.12.0",
     "istanbul": "~0.4.5",
+    "jsdoc": "~3.5.5",
     "jsdom": "~11.4.0",
     "jsdom-global": "~3.0.2",
     "mocha": "~4.0.1",
