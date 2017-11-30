@@ -51,7 +51,11 @@ npm install
 npm run build
 ```
 
-The build is either for development or production. Update the value of NODE_ENV in the `.env` file.
+The build is for both development and production.
+
+It's possible to only build development with `npm run build-dev` or production (no mapfile) with `npm run build-prod`.
+
+There is another build command to analyze the production package and check which parts of the code weighs more than other parts with `npm run build-analyze`. This will open localhost:8888 where code parts can be checked.
 
 ### Unit tests
 ```
