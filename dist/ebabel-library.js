@@ -143,6 +143,7 @@ exports.randomNumber = randomNumber;
 /**
  * `randomList`
  * Returns the subset of a list of x elements from a larger source list.
+ * @param {object} input - Object with 2 properties: source and max. The source property is the array from which a max number of elements will be randomly selected.
  */
 
 Object.defineProperty(exports, "__esModule", {
@@ -153,9 +154,16 @@ var randomList = function randomList(input) {
       max = input.max;
 
 
-  if (!source || source.length === 0 || max === 0) {
+  if (!source || source.length === 0) {
     return {
       list: [],
+      rest: []
+    };
+  }
+
+  if (max === 0) {
+    return {
+      list: source,
       rest: []
     };
   }
@@ -225,6 +233,7 @@ exports.guid = guid;
 /**
  * `countArrayElements`
  * Returns an object that counts how many times each element is present in a given array.
+ * @param {array} input - Array where element occurences need to be counted.
  */
 
 Object.defineProperty(exports, "__esModule", {
@@ -283,7 +292,8 @@ exports.Ido = Ido;
 
 /**
  * `preventXss`
- * Processes an input to prevent Cross Site Scripting injection attacks (XSS). Returns a safe version of that input.
+ * Processes an input string to prevent Cross Site Scripting injection attacks (XSS). Returns a safe version of that input.
+ * @param {string} input - The user input string that needs to be sanitized, to remove the possibility of injecting script of other html tags.
  */
 
 Object.defineProperty(exports, "__esModule", {
