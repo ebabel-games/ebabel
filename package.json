@@ -16,10 +16,10 @@
     ]
   },
   "scripts": {
-    "test": "./node_modules/.bin/nyc --reporter=text --reporter=html ./node_modules/.bin/mocha test/*.test.js",
-    "build": "./node_modules/.bin/webpack --progress",
-    "lint": "./node_modules/.bin/eslint src/",
-    "doc": "./node_modules/.bin/jsdoc src/"
+    "test": "node ./node_modules/.bin/nyc --reporter=text --reporter=html ./node_modules/.bin/mocha test/*.test.js",
+    "build": "node ./node_modules/.bin/webpack --progress",
+    "lint": "node ./node_modules/.bin/eslint src/",
+    "doc": "node ./node_modules/.bin/jsdoc src/"
   },
   "repository": {
     "type": "git",
