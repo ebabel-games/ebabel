@@ -1,5 +1,6 @@
 const path = require('path');
 const config = require('./package.json');
+const webpack = require('webpack');
 require('dotenv').config();
 
 module.exports = {
@@ -9,11 +10,16 @@ module.exports = {
     library: process.env.NAME,
     libraryTarget: process.env.TARGET,
     path: __dirname,
-    filename: `dist/${process.env.NAME}.js`
+    filename: `dist/${process.env.NAME}.min.js`,
   },
   module: {
     loaders: [
       {test: /\.js?$/, exclude: /node_modules/, loader: 'babel-loader'}
     ]
   },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: { warnings: false },
+    }),
+  ],
 };
