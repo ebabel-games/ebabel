@@ -2,7 +2,7 @@
 import chai from 'chai';
 
 // Require jsdom-global and run.
-require('jsdom-global')()
+require('jsdom-global')();
 
 // Import module to test.
 import { randomList } from '../src/';
@@ -19,12 +19,12 @@ describe('randomList', () => {
     result.rest.should.be.an('array').that.is.empty;
   });
 
-  it('returns empty list and rest arrays when max is set to 0', () => {
+  it('returns a list with all the source and an empty rest array when max is set to 0', () => {
     const result = randomList({
       source: ['apple', 'lemon', 'cherry', 'pineapple'],
       max: 0,
     });
-    result.list.should.be.an('array').that.is.empty;
+    result.list.should.be.an('array').that.is.deep.equal(['apple', 'lemon', 'cherry', 'pineapple']);
     result.rest.should.be.an('array').that.is.empty;
   });
 

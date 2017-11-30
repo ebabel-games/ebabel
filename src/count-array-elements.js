@@ -3,6 +3,7 @@
 /**
  * `countArrayElements`
  * Returns an object that counts how many times each element is present in a given array.
+ * @param {array} input - Array where element occurences need to be counted.
  */
 const countArrayElements = (input) => {
   if (!Array.isArray(input)) {
