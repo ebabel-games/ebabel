@@ -43,4 +43,4 @@ This code is free to use for all purposes. For more details, see [GNU General Pu
 
 ## Develop the library itself
 
-For more details, see [Contributing guidelines](CONTRIBUTING)
+For more details, see [Contributing guidelines](CONTRIBUTING.md)
