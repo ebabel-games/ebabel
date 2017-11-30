@@ -24,7 +24,7 @@ This library can be used in ES5 or ES6+
 #### randomNumber
 ```
 // ES5
-<script src="dist/ebabel-library.min.js"></script>
+<script src="dist/ebabel-library.min.js.gz"></script>
 <script>
   var result = window['ebabel-library'].randomNumber(6).toInt()
 </script>

@@ -1,6 +1,7 @@
 const path = require('path');
 const config = require('./package.json');
 const webpack = require('webpack');
+const CompressionPlugin = require('compression-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 require('dotenv').config();
 
@@ -22,6 +23,16 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin({
       compress: { warnings: false },
     }),
-    new BundleAnalyzerPlugin(),
+    new webpack.optimize.AggressiveMergingPlugin(), // Merge chunks.
+    new CompressionPlugin({
+      asset: '[path].gz[query]',
+      algorithm: 'gzip',
+      test: /\.js$|\.css$|\.html$/,
+      threshold: 1024,
+      minRatio: 0.8
+    }),
+    new BundleAnalyzerPlugin({
+      defaultSizes: 'gzip',
+    }),
   ],
 };
