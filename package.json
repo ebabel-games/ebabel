@@ -16,6 +16,7 @@
     ]
   },
   "scripts": {
+    "postinstall": "npm run build",
     "test": "node ./node_modules/.bin/nyc --reporter=text --reporter=html ./node_modules/.bin/mocha test/*.test.js",
     "build": "npm run build-dev && npm run build-prod",
     "build-dev": "node ./node_modules/.bin/webpack --progress --config webpack.config.js",
