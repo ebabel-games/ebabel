@@ -114,10 +114,10 @@
           const color = e.currentTarget.attributes.getNamedItem('data-color').value;
 
           // Note: 10 sided dice goes from 0 to 9, whereas the other dices go from 1 to their max value.
-          const min = (max === 10) ? 0 : 1;
-          max = (max === 10) ? 9 : max;
-
-          const result = randomNumber(max, min).toInt();
+          // Since the min value is not included, to obtain 0, min should be -1.
+          const result = (max === 10) ?
+            randomNumber(9, -1).toInt()
+            : randomNumber(max).toInt();
 
           displayResult(max, result, e.currentTarget.innerHTML, color);
         });
