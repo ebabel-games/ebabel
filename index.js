@@ -5,14 +5,13 @@ const guid = require('ebabel-guid');
 const randomList = require('ebabel-random-list');
 const Ido = require('ebabel-ido');
 const preventXss = require('.ebabel-prevent-xss');
-
-const countArrayElements = require('./modules/count-array-elements.js');
+const countArrayElements = require('ebabel-count-array-elements');
 
 module.exports = {
   random,
-  randomList,
   guid,
-  countArrayElements,
+  randomList,
   Ido,
   preventXss,
+  countArrayElements,
 };
