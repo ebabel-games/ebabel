@@ -9,11 +9,11 @@ npm install --save ebabel
 ## Usage
 This library is to be used with ES6+
 
-### random
 ```
-const { random } = require('ebabel');
+const { random, guid } = require('ebabel');
 
-const result = random(6);
+const diceResult = random(6);
+const id = guid();
 ```
 
 ## Develop the library itself
