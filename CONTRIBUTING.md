@@ -1,4 +1,4 @@
-# Contribute to eBabel
+# Contribute
 First of all, thank you so much for taking an interest in this project, and being willing to spend your own precious spare time and energy.
 
 All contributions are very welcome.
