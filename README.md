@@ -1,25 +1,20 @@
 # ebabel
 Library of re-useable game modules to build web browser HTML5 games.
 
-## Use for your own game
-
-### Install as dependency for your own game
+## Install
 ```
 npm install --save ebabel
 ```
 
-### Usage in your own game
+## Usage
 This library is to be used with ES6+
 
-#### randomNumber
+### random
 ```
-import { randomNumber } from 'ebabel';
+const { random } = require('ebabel');
 
-const result = randomNumber(6).toInt();
+const result = random(6);
 ```
-
-### License
-This code is free to use for all purposes. For more details, see [GNU General Public License, version 3](LICENSE).
 
 ## Develop the library itself
 For more details, see [Contributing guidelines](CONTRIBUTING.md)
