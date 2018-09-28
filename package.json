@@ -1,7 +1,7 @@
 {
   "name": "ebabel",
   "version": "2.0.0",
-  "description": "Library of re-useable game functions to build web browser HTML5 games.",
+  "description": "Library of reusable game modules to build HTML5 games.",
   "main": "src/index.js",
   "nyc": {
     "exclude": [
@@ -34,9 +34,9 @@
     "library",
     "javascript"
   ],
-  "author": "Nadjib Amar <hello@ebabel.eu> (http://ebabel.eu/)",
+  "author": "Thomas Amar <hello@ebabel.eu> (https://ebabel.eu/)",
   "contributors": [
-    "gyroscopico (https://github.com/gyroscopico)"
+    "Ernesto Paniagua <ernestopani@gmail.com> (https://github.com/ernes)"
   ],
   "license": "GPL-3.0",
   "bugs": {
@@ -44,23 +44,23 @@
   },
   "homepage": "https://github.com/ebabel-eu/ebabel#readme",
   "devDependencies": {
-    "babel-cli": "~6.26.0",
-    "babel-core": "~6.26.0",
-    "babel-loader": "~7.1.2",
-    "babel-plugin-istanbul": "~4.1.5",
-    "babel-preset-env": "~1.6.1",
-    "chai": "~4.1.2",
-    "compression-webpack-plugin": "~1.0.1",
-    "dotenv": "~4.0.0",
-    "eslint": "~4.12.0",
-    "istanbul": "~0.4.5",
-    "jsdoc": "~3.5.5",
-    "jsdom": "~11.4.0",
-    "jsdom-global": "~3.0.2",
-    "mocha": "~4.0.1",
-    "nyc": "~11.3.0",
-    "webpack": "~3.8.1",
-    "webpack-bundle-analyzer": "~2.9.1",
-    "webpack-dev-server": "~2.9.4"
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-istanbul": "^5.0.1",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "compression-webpack-plugin": "^2.0.0",
+    "dotenv": "^6.0.0",
+    "eslint": "^5.6.1",
+    "istanbul": "^0.4.5",
+    "jsdoc": "^3.5.5",
+    "jsdom": "^12.0.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1",
+    "webpack": "^4.20.2",
+    "webpack-bundle-analyzer": "^3.0.2",
+    "webpack-dev-server": "^3.1.9"
   }
 }
