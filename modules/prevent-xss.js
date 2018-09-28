@@ -7,6 +7,4 @@
  */
 const preventXss = (input) => input.replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-export {
-  preventXss,
-};
+module.exports = preventXss;

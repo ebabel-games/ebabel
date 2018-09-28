@@ -56,6 +56,4 @@ const randomList = (input) => {
   };
 };
 
-export {
-  randomList,
-};
+module.exports = randomList;

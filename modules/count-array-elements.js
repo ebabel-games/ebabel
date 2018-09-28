@@ -20,6 +20,4 @@ const countArrayElements = (input) => {
   return result;
 };
 
-export {
-  countArrayElements,
-};
+module.exports = countArrayElements;

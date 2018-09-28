@@ -2,19 +2,7 @@
   "name": "ebabel",
   "version": "2.0.0",
   "description": "Library of reusable game modules to build HTML5 games.",
-  "main": "src/index.js",
-  "nyc": {
-    "exclude": [
-      ".nyc_output",
-      "coverage",
-      "demo",
-      "dist",
-      "node_modules"
-    ],
-    "include": [
-      "src/*.js"
-    ]
-  },
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ebabel-eu/ebabel.git"
