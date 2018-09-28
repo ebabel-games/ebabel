@@ -1,6 +1,6 @@
 {
   "name": "ebabel",
-  "version": "1.6.2",
+  "version": "2.0.0",
   "description": "Library of re-useable game functions to build web browser HTML5 games.",
   "main": "src/index.js",
   "nyc": {
