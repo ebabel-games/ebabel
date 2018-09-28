@@ -1,6 +1,6 @@
 {
   "name": "ebabel",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Library of reusable game modules to build HTML5 games.",
   "main": "index.js",
   "repository": {
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/ebabel-eu/ebabel#readme",
   "dependencies": {
     "ebabel-count-array-elements": "^1.0.0",
+    "ebabel-distance": "^1.0.0",
     "ebabel-guid": "^1.0.0",
     "ebabel-ido": "^1.0.0",
     "ebabel-prevent-xss": "^1.0.0",

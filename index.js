@@ -6,6 +6,7 @@ const randomList = require('ebabel-random-list');
 const Ido = require('ebabel-ido');
 const preventXss = require('.ebabel-prevent-xss');
 const countArrayElements = require('ebabel-count-array-elements');
+const distance = require('ebabel-distance');
 
 module.exports = {
   random,
@@ -14,4 +15,5 @@ module.exports = {
   Ido,
   preventXss,
   countArrayElements,
+  distance,
 };
