@@ -4,7 +4,6 @@ First of all, thank you so much for taking an interest in this project, and bein
 All contributions are very welcome.
 
 ## How to contribute
-
 Please [fork this repository](https://help.github.com/articles/fork-a-repo/), so you have full control of the code.
 
 Make all your changes in your own fork, then once you are happy with your changes, [raise a pull request](https://help.github.com/articles/about-pull-requests/) so I can review and merge your code.
@@ -12,7 +11,6 @@ Make all your changes in your own fork, then once you are happy with your change
 Please raise your pull request from your branch in your repository to my repository's [develop branch](https://github.com/ebabel-eu/ebabel/tree/develop).
 
 ## Contact
-
 If you have any question or want to discuss anything at all, please drop me an e-mail on hello@ebabel.eu
 
 Once again, thank you!
