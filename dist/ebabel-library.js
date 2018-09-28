@@ -1,4 +1,4 @@
-window["ebabel-library"] =
+window["ebabel"] =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -307,4 +307,4 @@ exports.preventXss = preventXss;
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=ebabel-library.js.map
+//# sourceMappingURL=ebabel.js.map

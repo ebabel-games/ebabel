@@ -1,5 +1,5 @@
-# ebabel-library
-Library of re-useable game functions to build web browser HTML5 games.
+# ebabel
+Library of re-useable game modules to build web browser HTML5 games.
 
 ## Use for your own game
 
@@ -7,12 +7,12 @@ Library of re-useable game functions to build web browser HTML5 games.
 
 Bower
 ```
-bower install --save ebabel-library
+bower install --save ebabel
 ```
 
 or, npm
 ```
-npm install --save ebabel-library
+npm install --save ebabel
 ```
 
 ### Usage in your own game
@@ -24,15 +24,15 @@ This library can be used in ES5 or ES6+
 #### randomNumber
 ```
 // ES5
-<script src="dist/ebabel-library.min.js.gz"></script>
+<script src="dist/ebabel.min.js.gz"></script>
 <script>
-  var result = window['ebabel-library'].randomNumber(6).toInt()
+  var result = window['ebabel'].randomNumber(6).toInt()
 </script>
 ```
 
 ```
 // ES6+
-import { randomNumber } from 'ebabel-library';
+import { randomNumber } from 'ebabel';
 
 const result = randomNumber(6).toInt();
 ```
