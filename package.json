@@ -1,6 +1,6 @@
 {
   "name": "ebabel",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Library of reusable game modules to build HTML5 games.",
   "main": "index.js",
   "repository": {
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/ebabel-eu/ebabel/issues"
   },
-  "homepage": "https://github.com/ebabel-eu/ebabel#readme"
+  "homepage": "https://github.com/ebabel-eu/ebabel#readme",
+  "dependencies": {
+    "ebabel-random": "^1.0.0"
+  }
 }

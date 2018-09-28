@@ -1,6 +1,7 @@
 'use strict';
 
-const random = require('./modules/random.js');
+const random = require('ebabel-random');
+
 const randomList = require('./modules/random-list.js');
 const guid = require('./modules/guid.js');
 const countArrayElements = require('./modules/count-array-elements.js');
