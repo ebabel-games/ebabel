@@ -15,16 +15,6 @@
       "src/*.js"
     ]
   },
-  "scripts": {
-    "postinstall": "npm run build && npm run doc",
-    "test": "node ./node_modules/.bin/nyc --reporter=text --reporter=html ./node_modules/.bin/mocha test/*.test.js",
-    "build": "npm run build-dev && npm run build-prod",
-    "build-dev": "node ./node_modules/.bin/webpack --progress --config webpack.config.js",
-    "build-prod": "node ./node_modules/.bin/webpack --progress --config webpack.production.config.js",
-    "build-analyze": "node ./node_modules/.bin/webpack --progress --config webpack.analyze.config.js",
-    "lint": "node ./node_modules/.bin/eslint src/",
-    "doc": "node ./node_modules/.bin/jsdoc src/"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ebabel-eu/ebabel.git"
@@ -42,25 +32,5 @@
   "bugs": {
     "url": "https://github.com/ebabel-eu/ebabel/issues"
   },
-  "homepage": "https://github.com/ebabel-eu/ebabel#readme",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.4",
-    "babel-plugin-istanbul": "^5.0.1",
-    "babel-preset-env": "^1.7.0",
-    "chai": "^4.2.0",
-    "compression-webpack-plugin": "^2.0.0",
-    "dotenv": "^6.0.0",
-    "eslint": "^5.6.1",
-    "istanbul": "^0.4.5",
-    "jsdoc": "^3.5.5",
-    "jsdom": "^12.0.0",
-    "jsdom-global": "^3.0.2",
-    "mocha": "^5.2.0",
-    "nyc": "^13.0.1",
-    "webpack": "^4.20.2",
-    "webpack-bundle-analyzer": "^3.0.2",
-    "webpack-dev-server": "^3.1.9"
-  }
+  "homepage": "https://github.com/ebabel-eu/ebabel#readme"
 }
