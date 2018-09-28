@@ -1,53 +1,18 @@
-# How to contribute to this project
+# Contribute to eBabel
+First of all, thank you so much for taking an interest in this project, and being willing to spend your own precious spare time and energy.
 
-Fork the repository and once you have made your code changes, raise a pull request.
+All contributions are very welcome.
 
-Thanks in advance for any and all contributions!
+## How to contribute
 
-## Design principles
-This library has no dependencies when executed in a browser. It's written with plain javascript and meant to be easily used in the context of a modern, standard compliant web browser.
+Please [fork this repository](https://help.github.com/articles/fork-a-repo/), so you have full control of the code.
 
-Each function does just one thing and tries to do it well. 
+Make all your changes in your own fork, then once you are happy with your changes, [raise a pull request](https://help.github.com/articles/about-pull-requests/) so I can review and merge your code.
 
-Each function is indenpendent from other functions.
+Please raise your pull request from your branch in your repository to my repository's [develop branch](https://github.com/ebabel-eu/ebabel/tree/develop).
 
-## Build from source
-```
-npm install
-npm run build
-```
+## Contact
 
-The build is for both development and production.
+If you have any question or want to discuss anything at all, please drop me an e-mail on hello@ebabel.eu
 
-It's possible to only build development with `npm run build-dev` or production (no mapfile) with `npm run build-prod`.
-
-There is another build command to analyze the production package and check which parts of the code weighs more than other parts with `npm run build-analyze`. This will open localhost:8888 where code parts can be checked.
-
-## Unit tests
-```
-npm test
-```
-
-## Lint
-```
-npm run lint
-```
-
-## Generate source code documentation
-```
-npm run doc
-```
-
-Browse the html files from the generated `out` directory.
-
-## npm and bower registries
-
-Pushing a new tag is enough to update the bower registry, only the initial setup was required.
-
-For npm, run `npm publish` to push a new tag version.
-
-## Quotes
-
-"Do one thing and do it well", [Sitepoint](https://www.sitepoint.com/design-and-build-your-own-javascript-library/).
-
-"Do more with less", [Chimeremeze Ukah](https://www.codementor.io/chimeremezeukah/build-a-reusable-javascript-library-du1086d7l).
+Once again, thank you!
