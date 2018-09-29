@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.0.10](https://github.com/ebabel-eu/ebabel/releases/tag/v2.0.10)
+- Update version of ebabel-random to 1.1.0
+
 ## [2.0.9](https://github.com/ebabel-eu/ebabel/releases/tag/v2.0.9)
 - Remove babelrc, update gitignore, add changelog.
 - Update version of ebabel-distance to 1.1.1
