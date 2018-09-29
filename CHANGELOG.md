@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.0.14](https://github.com/ebabel-eu/ebabel/releases/tag/v2.0.14)
+- Add ebabel-skybox module.
+
 ## [2.0.13](https://github.com/ebabel-eu/ebabel/releases/tag/v2.0.13)
 - Fix the ebabel-bounding-box module inclusion.
 
