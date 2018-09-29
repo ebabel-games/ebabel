@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.0.11](https://github.com/ebabel-eu/ebabel/releases/tag/v2.0.11)
+- Add ebabel-light module.
+
 ## [2.0.10](https://github.com/ebabel-eu/ebabel/releases/tag/v2.0.10)
 - Update version of ebabel-random to 1.1.0
 
