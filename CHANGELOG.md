@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.0.12](https://github.com/ebabel-eu/ebabel/releases/tag/v2.0.12)
+- Add ebabel-bounding-box module.
+
 ## [2.0.11](https://github.com/ebabel-eu/ebabel/releases/tag/v2.0.11)
 - Add ebabel-light module.
 
