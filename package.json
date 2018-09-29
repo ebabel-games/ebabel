@@ -23,7 +23,7 @@
   "homepage": "https://github.com/ebabel-eu/ebabel#readme",
   "dependencies": {
     "ebabel-count-array-elements": "^1.0.0",
-    "ebabel-distance": "^1.0.0",
+    "ebabel-distance": "^1.1.1",
     "ebabel-guid": "^1.0.0",
     "ebabel-ido": "^1.0.0",
     "ebabel-prevent-xss": "^1.0.0",
