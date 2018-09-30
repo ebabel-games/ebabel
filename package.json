@@ -1,8 +1,11 @@
 {
   "name": "ebabel",
-  "version": "2.0.15",
+  "version": "2.0.16",
   "description": "Library of reusable game modules to build HTML5 games.",
   "main": "index.js",
+  "engines": {
+    "node": ">=10"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ebabel-eu/ebabel.git"
@@ -30,8 +33,8 @@
     "ebabel-ido": "^1.0.0",
     "ebabel-light": "^1.0.0",
     "ebabel-prevent-xss": "^1.0.0",
-    "ebabel-random": "^1.1.0",
+    "ebabel-random": "^1.1.3",
     "ebabel-random-list": "^1.0.0",
-    "ebabel-skybox": "^2.0.0"
+    "ebabel-skybox": "^2.1.0"
   }
 }

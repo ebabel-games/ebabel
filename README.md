@@ -1,4 +1,6 @@
 # ebabel
+[![Build Status](https://travis-ci.org/ebabel-eu/ebabel.svg?branch=master)](https://travis-ci.org/ebabel-eu/ebabel)
+
 Library of re-useable game modules to build web browser HTML5 games.
 
 ## Install

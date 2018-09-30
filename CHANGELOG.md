@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.0.16](https://github.com/ebabel-eu/ebabel/releases/tag/v2.0.16)
+- Add Travis CLI and badge.
+
 ## [2.0.15](https://github.com/ebabel-eu/ebabel/releases/tag/v2.0.15)
 - Upgrade ebabel-skybox module to version 2.0.0.
 
