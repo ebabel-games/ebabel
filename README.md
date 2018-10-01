@@ -32,19 +32,6 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 
 
 
-<a name="countArrayElements"></a>
-
-## countArrayElements(input)
-`countArrayElements`Returns an object that counts how many times each element is present in a given array.
-
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| input | <code>array</code> | Array where element occurences need to be counted. |
-
-
-
 <a name="distance"></a>
 
 ## distance(i, j) ⇒ <code>number</code>
@@ -62,18 +49,11 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 
 <a name="guid"></a>
 
-## guid()
+## guid() ⇒ <code>string</code>
 `guid`Returns a globally unique id string following the standard guid format.
 
 **Kind**: global function  
-
-
-<a name="Ido"></a>
-
-## Ido()
-`Ido`Returns a a string that commemorates how many days since Ido died.
-
-**Kind**: global function  
+**Returns**: <code>string</code> - Guid of 36 characters, including hyphens.  
 
 
 <a name="light"></a>
@@ -97,15 +77,74 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 
 <a name="preventXss"></a>
 
-## preventXss(input)
+## preventXss(input) ⇒ <code>string</code>
 `preventXss`Processes an input string to prevent Cross Site Scripting injection attacks (XSS). Returns a safe version of that input.
 
 **Kind**: global function  
+**Returns**: <code>string</code> - Cleaned string that shouldn't run any javascript code if displayed on a webpage.  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | input | <code>string</code> | The user input string that needs to be sanitized, to remove the possibility of injecting script of other html tags. |
 
+
+
+<a name="Ido"></a>
+
+## Ido()
+`Ido`Returns a a string that commemorates how many days since Ido died.
+
+**Kind**: global function  
+
+
+<a name="countArrayElements"></a>
+
+## countArrayElements(input)
+`countArrayElements`Returns an object that counts how many times each element is present in a given array.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| input | <code>array</code> | Array where element occurences need to be counted. |
+
+
+
+## Constants
+
+<dl>
+<dt><a href="#mockTHREEx">mockTHREEx</a></dt>
+<dd><p><code>mockTHREEx</code>
+Mock THREEx.js for unit testing purposes.</p>
+</dd>
+<dt><a href="#mockTHREE">mockTHREE</a></dt>
+<dd><p><code>mockTHREE</code>
+Mock THREE.js for unit testing purposes.</p>
+</dd>
+<dt><a href="#mockDataStore">mockDataStore</a></dt>
+<dd><p><code>dataStore</code>
+Mock dataStore for unit testing purposes.</p>
+</dd>
+</dl>
+
+<a name="mockTHREEx"></a>
+
+## mockTHREEx
+`mockTHREEx`Mock THREEx.js for unit testing purposes.
+
+**Kind**: global constant  
+<a name="mockTHREE"></a>
+
+## mockTHREE
+`mockTHREE`Mock THREE.js for unit testing purposes.
+
+**Kind**: global constant  
+<a name="mockDataStore"></a>
+
+## mockDataStore
+`dataStore`Mock dataStore for unit testing purposes.
+
+**Kind**: global constant  
 
 
 <a name="random"></a>
@@ -120,19 +159,6 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 | --- | --- | --- |
 | max | <code>number</code> | the maximum to be returned, should be an integer |
 | min | <code>number</code> | the minimum to be returned, should be an integer |
-
-
-
-<a name="randomList"></a>
-
-## randomList(input)
-`randomList`Returns the subset of a list of x elements from a larger source list.
-
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| input | <code>object</code> | Object with 2 properties: source and max. The source property is the array from which a max number of elements will be randomly selected. |
 
 
 
@@ -152,6 +178,22 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 | input.directions | <code>array</code> | Array of image paths for all skybox sides, by directions. |
 | input.size | <code>number</code> | Size of the skybox. Defaults to 10000. |
 | input.position | <code>array</code> | Position of the skybox as 3D coordinates. Defaults to [0, 0, 0]. |
+
+
+
+<a name="randomList"></a>
+
+## randomList(input) ⇒ <code>object</code>
+`randomList`Returns the subset of a list of x elements from a larger source list.
+
+**Kind**: global function  
+**Returns**: <code>object</code> - 2 arrays in an object: list and rest.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| input | <code>object</code> | Input properties: source and max. |
+| input.source | <code>array</code> | The source property is the array from which a max number of elements will be randomly selected. |
+| input.max | <code>number</code> | Number of elements that will be randomly selected from input.source |
 
 
 

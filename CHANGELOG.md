@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.1.1](https://github.com/ebabel-eu/ebabel/releases/tag/v2.1.1)
+- Add ebabel-mocks module.
+
 ## [2.1.0](https://github.com/ebabel-eu/ebabel/releases/tag/v2.1.0)
 - Documentation is generated from scripts instead of being written manually.
 
