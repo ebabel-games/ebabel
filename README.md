@@ -13,8 +13,8 @@ npm install --save ebabel
 npm run readme
 ```
 
-## Develop the library itself
-For more details, see [Contributing guidelines](CONTRIBUTING.md)
+## Contribute to ebabel game modules
+First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.md) so we can start working together effectively.
 
 
 
