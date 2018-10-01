@@ -63,5 +63,5 @@ typings/
 # MacOSX folder level custom attributes  
 .DS_Store
 
-# output from running jsdoc
-docs
+# Visual Studio Code
+.vscode
