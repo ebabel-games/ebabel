@@ -10,6 +10,7 @@ const distance = require('ebabel-distance');
 const light = require('ebabel-light');
 const boundingBox = require('ebabel-bounding-box');
 const skybox = require('ebabel-skybox');
+const { mockTHREEx, mockTHREE, mockDataStore } = require('ebabel-mocks');
 
 module.exports = {
   random,
@@ -21,5 +22,8 @@ module.exports = {
   distance,
   light,
   boundingBox,
-  skybox
+  skybox,
+  mockTHREEx,
+  mockTHREE,
+  mockDataStore,
 };

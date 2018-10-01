@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.1.2](https://github.com/ebabel-eu/ebabel/releases/tag/v2.1.2)
+- Fix ebabel-mocks module export.
+
 ## [2.1.1](https://github.com/ebabel-eu/ebabel/releases/tag/v2.1.1)
 - Add ebabel-mocks module.
 
