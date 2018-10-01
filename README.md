@@ -8,7 +8,7 @@ Library of re-useable game modules to build web browser HTML5 games.
 npm install --save ebabel
 ```
 
-## Generate this `README.md` document
+## Generate this README.md document
 ```
 npm run readme
 ```
@@ -17,6 +17,20 @@ npm run readme
 For more details, see [Contributing guidelines](CONTRIBUTING.md)
 
 ## Game modules
+
+<a name="countArrayElements"></a>
+
+## countArrayElements(input)
+`countArrayElements`Returns an object that counts how many times each element is present in a given array.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| input | <code>array</code> | Array where element occurences need to be counted. |
+
+
+
 <a name="boundingBox"></a>
 
 ## boundingBox(THREE, mesh)
@@ -28,6 +42,7 @@ For more details, see [Contributing guidelines](CONTRIBUTING.md)
 | --- | --- | --- |
 | THREE | <code>object</code> | Core library of THREE.js |
 | mesh | <code>string</code> | 3D THREE.js object for a mesh that needs a bounding box calculated. |
+
 
 
 <a name="distance"></a>
@@ -44,17 +59,6 @@ For more details, see [Contributing guidelines](CONTRIBUTING.md)
 | j | <code>array</code> | Array end position in 3D space e.g. [0, 15.1, -7] |
 
 
-<a name="countArrayElements"></a>
-
-## countArrayElements(input)
-`countArrayElements`Returns an object that counts how many times each element is present in a given array.
-
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| input | <code>array</code> | Array where element occurences need to be counted. |
-
 
 <a name="guid"></a>
 
@@ -63,12 +67,14 @@ For more details, see [Contributing guidelines](CONTRIBUTING.md)
 
 **Kind**: global function  
 
+
 <a name="Ido"></a>
 
 ## Ido()
 `Ido`Returns a a string that commemorates how many days since Ido died.
 
 **Kind**: global function  
+
 
 <a name="light"></a>
 
@@ -88,6 +94,7 @@ For more details, see [Contributing guidelines](CONTRIBUTING.md)
 | input.name | <code>string</code> | Name of the light. Defaults to 'main-light'. |
 
 
+
 <a name="preventXss"></a>
 
 ## preventXss(input)
@@ -98,6 +105,7 @@ For more details, see [Contributing guidelines](CONTRIBUTING.md)
 | Param | Type | Description |
 | --- | --- | --- |
 | input | <code>string</code> | The user input string that needs to be sanitized, to remove the possibility of injecting script of other html tags. |
+
 
 
 <a name="random"></a>
@@ -112,6 +120,20 @@ For more details, see [Contributing guidelines](CONTRIBUTING.md)
 | --- | --- | --- |
 | max | <code>number</code> | the maximum to be returned, should be an integer |
 | min | <code>number</code> | the minimum to be returned, should be an integer |
+
+
+
+<a name="randomList"></a>
+
+## randomList(input)
+`randomList`Returns the subset of a list of x elements from a larger source list.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| input | <code>object</code> | Object with 2 properties: source and max. The source property is the array from which a max number of elements will be randomly selected. |
+
 
 
 <a name="skybox"></a>
@@ -131,16 +153,5 @@ For more details, see [Contributing guidelines](CONTRIBUTING.md)
 | input.size | <code>number</code> | Size of the skybox. Defaults to 10000. |
 | input.position | <code>array</code> | Position of the skybox as 3D coordinates. Defaults to [0, 0, 0]. |
 
-
-<a name="randomList"></a>
-
-## randomList(input)
-`randomList`Returns the subset of a list of x elements from a larger source list.
-
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| input | <code>object</code> | Object with 2 properties: source and max. The source property is the array from which a max number of elements will be randomly selected. |
 
 

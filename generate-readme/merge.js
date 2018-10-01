@@ -7,7 +7,7 @@ const readAppend = (path, title = '') => {
   return new Promise((resolve, reject) => {
     fs.readFile(path, 'utf8', (err, contents) => {
       if (err) reject(err);    
-      const toAppend = [title, contents, '\n'].join('');
+      const toAppend = [title, contents, '\n\n'].join('');
       fs.appendFile(`${process.cwd()}/README.md`, toAppend, (err) => {
         if (err) reject(err);
         resolve();

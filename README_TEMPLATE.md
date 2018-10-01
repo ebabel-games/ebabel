@@ -7,7 +7,7 @@ Library of re-useable game modules to build web browser HTML5 games.
 npm install --save ebabel
 ```
 
-## Generate this `README.md` document
+## Generate this README.md document
 ```
 npm run readme
 ```
