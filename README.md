@@ -16,19 +16,6 @@ npm run readme
 ## Develop the library itself
 For more details, see [Contributing guidelines](CONTRIBUTING.md)
 
-## Game modules
-
-<a name="countArrayElements"></a>
-
-## countArrayElements(input)
-`countArrayElements`Returns an object that counts how many times each element is present in a given array.
-
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| input | <code>array</code> | Array where element occurences need to be counted. |
-
 
 
 <a name="boundingBox"></a>
@@ -42,6 +29,19 @@ For more details, see [Contributing guidelines](CONTRIBUTING.md)
 | --- | --- | --- |
 | THREE | <code>object</code> | Core library of THREE.js |
 | mesh | <code>string</code> | 3D THREE.js object for a mesh that needs a bounding box calculated. |
+
+
+
+<a name="countArrayElements"></a>
+
+## countArrayElements(input)
+`countArrayElements`Returns an object that counts how many times each element is present in a given array.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| input | <code>array</code> | Array where element occurences need to be counted. |
 
 
 

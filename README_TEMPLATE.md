@@ -15,4 +15,3 @@ npm run readme
 ## Develop the library itself
 For more details, see [Contributing guidelines](CONTRIBUTING.md)
 
-## Game modules
