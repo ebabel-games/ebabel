@@ -15,6 +15,15 @@ Mock dataStore for unit testing purposes.</p>
 </dd>
 </dl>
 
+## Functions
+
+<dl>
+<dt><a href="#hexStringToInt">hexStringToInt(input)</a> ⇒ <code>number</code></dt>
+<dd><p><code>hexStringToInt</code>
+Convert string hex to integer.</p>
+</dd>
+</dl>
+
 <a name="mockTHREEx"></a>
 
 ## mockTHREEx
@@ -33,3 +42,15 @@ Mock dataStore for unit testing purposes.</p>
 `dataStore`Mock dataStore for unit testing purposes.
 
 **Kind**: global constant  
+<a name="hexStringToInt"></a>
+
+## hexStringToInt(input) ⇒ <code>number</code>
+`hexStringToInt`Convert string hex to integer.
+
+**Kind**: global function  
+**Returns**: <code>number</code> - Integer conversion.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| input | <code>string</code> | Input hexadecimal color in string format, i.e. #ff0099 |
+

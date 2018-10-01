@@ -40,69 +40,18 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 **Kind**: global function  
 
 
-<a name="countArrayElements"></a>
+<a name="preventXss"></a>
 
-## countArrayElements(input)
-`countArrayElements`Returns an object that counts how many times each element is present in a given array.
+## preventXss(input) ⇒ <code>string</code>
+`preventXss`Processes an input string to prevent Cross Site Scripting injection attacks (XSS). Returns a safe version of that input.
 
 **Kind**: global function  
+**Returns**: <code>string</code> - Cleaned string that shouldn't run any javascript code if displayed on a webpage.  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| input | <code>array</code> | Array where element occurences need to be counted. |
+| input | <code>string</code> | The user input string that needs to be sanitized, to remove the possibility of injecting script of other html tags. |
 
-
-
-<a name="distance"></a>
-
-## distance(i, j) ⇒ <code>number</code>
-`distance`Calculate the distance in 3D space from point "i" x, y, and z coordinates to point "j" x, y, and z coordinates.
-
-**Kind**: global function  
-**Returns**: <code>number</code> - Distance between i and j.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| i | <code>array</code> | Array start position in 3D space e.g. [-10, 5.1, 3] |
-| j | <code>array</code> | Array end position in 3D space e.g. [0, 15.1, -7] |
-
-
-
-## Constants
-
-<dl>
-<dt><a href="#mockTHREEx">mockTHREEx</a></dt>
-<dd><p><code>mockTHREEx</code>
-Mock THREEx.js for unit testing purposes.</p>
-</dd>
-<dt><a href="#mockTHREE">mockTHREE</a></dt>
-<dd><p><code>mockTHREE</code>
-Mock THREE.js for unit testing purposes.</p>
-</dd>
-<dt><a href="#mockDataStore">mockDataStore</a></dt>
-<dd><p><code>dataStore</code>
-Mock dataStore for unit testing purposes.</p>
-</dd>
-</dl>
-
-<a name="mockTHREEx"></a>
-
-## mockTHREEx
-`mockTHREEx`Mock THREEx.js for unit testing purposes.
-
-**Kind**: global constant  
-<a name="mockTHREE"></a>
-
-## mockTHREE
-`mockTHREE`Mock THREE.js for unit testing purposes.
-
-**Kind**: global constant  
-<a name="mockDataStore"></a>
-
-## mockDataStore
-`dataStore`Mock dataStore for unit testing purposes.
-
-**Kind**: global constant  
 
 
 <a name="light"></a>
@@ -124,6 +73,79 @@ Mock dataStore for unit testing purposes.</p>
 
 
 
+<a name="random"></a>
+
+## random(max, min) ⇒ <code>number</code>
+`random`Returns a random integer number from 1 to 100 or from min to max (min is non-inclusive).
+
+**Kind**: global function  
+**Returns**: <code>number</code> - Integer between min and max (inclusively)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| max | <code>number</code> | the maximum to be returned, should be an integer |
+| min | <code>number</code> | the minimum to be returned, should be an integer |
+
+
+
+## Constants
+
+<dl>
+<dt><a href="#mockTHREEx">mockTHREEx</a></dt>
+<dd><p><code>mockTHREEx</code>
+Mock THREEx.js for unit testing purposes.</p>
+</dd>
+<dt><a href="#mockTHREE">mockTHREE</a></dt>
+<dd><p><code>mockTHREE</code>
+Mock THREE.js for unit testing purposes.</p>
+</dd>
+<dt><a href="#mockDataStore">mockDataStore</a></dt>
+<dd><p><code>dataStore</code>
+Mock dataStore for unit testing purposes.</p>
+</dd>
+</dl>
+
+## Functions
+
+<dl>
+<dt><a href="#hexStringToInt">hexStringToInt(input)</a> ⇒ <code>number</code></dt>
+<dd><p><code>hexStringToInt</code>
+Convert string hex to integer.</p>
+</dd>
+</dl>
+
+<a name="mockTHREEx"></a>
+
+## mockTHREEx
+`mockTHREEx`Mock THREEx.js for unit testing purposes.
+
+**Kind**: global constant  
+<a name="mockTHREE"></a>
+
+## mockTHREE
+`mockTHREE`Mock THREE.js for unit testing purposes.
+
+**Kind**: global constant  
+<a name="mockDataStore"></a>
+
+## mockDataStore
+`dataStore`Mock dataStore for unit testing purposes.
+
+**Kind**: global constant  
+<a name="hexStringToInt"></a>
+
+## hexStringToInt(input) ⇒ <code>number</code>
+`hexStringToInt`Convert string hex to integer.
+
+**Kind**: global function  
+**Returns**: <code>number</code> - Integer conversion.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| input | <code>string</code> | Input hexadecimal color in string format, i.e. #ff0099 |
+
+
+
 <a name="randomList"></a>
 
 ## randomList(input) ⇒ <code>object</code>
@@ -137,20 +159,6 @@ Mock dataStore for unit testing purposes.</p>
 | input | <code>object</code> | Input properties: source and max. |
 | input.source | <code>array</code> | The source property is the array from which a max number of elements will be randomly selected. |
 | input.max | <code>number</code> | Number of elements that will be randomly selected from input.source |
-
-
-
-<a name="preventXss"></a>
-
-## preventXss(input) ⇒ <code>string</code>
-`preventXss`Processes an input string to prevent Cross Site Scripting injection attacks (XSS). Returns a safe version of that input.
-
-**Kind**: global function  
-**Returns**: <code>string</code> - Cleaned string that shouldn't run any javascript code if displayed on a webpage.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| input | <code>string</code> | The user input string that needs to be sanitized, to remove the possibility of injecting script of other html tags. |
 
 
 
@@ -173,18 +181,18 @@ Mock dataStore for unit testing purposes.</p>
 
 
 
-<a name="random"></a>
+<a name="distance"></a>
 
-## random(max, min) ⇒ <code>number</code>
-`random`Returns a random integer number from 1 to 100 or from min to max (min is non-inclusive).
+## distance(i, j) ⇒ <code>number</code>
+`distance`Calculate the distance in 3D space from point "i" x, y, and z coordinates to point "j" x, y, and z coordinates.
 
 **Kind**: global function  
-**Returns**: <code>number</code> - Integer between min and max (inclusively)  
+**Returns**: <code>number</code> - Distance between i and j.  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| max | <code>number</code> | the maximum to be returned, should be an integer |
-| min | <code>number</code> | the minimum to be returned, should be an integer |
+| i | <code>array</code> | Array start position in 3D space e.g. [-10, 5.1, 3] |
+| j | <code>array</code> | Array end position in 3D space e.g. [0, 15.1, -7] |
 
 
 
@@ -195,5 +203,18 @@ Mock dataStore for unit testing purposes.</p>
 
 **Kind**: global function  
 **Returns**: <code>string</code> - Guid of 36 characters, including hyphens.  
+
+
+<a name="countArrayElements"></a>
+
+## countArrayElements(input)
+`countArrayElements`Returns an object that counts how many times each element is present in a given array.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| input | <code>array</code> | Array where element occurences need to be counted. |
+
 
 
