@@ -11,6 +11,7 @@ const light = require('ebabel-light');
 const boundingBox = require('ebabel-bounding-box');
 const skybox = require('ebabel-skybox');
 const { hexStringToInt, mockTHREEx, mockTHREE, mockDataStore } = require('ebabel-mocks');
+const { deepCopy, dice, positive, randomPosition, randomPosOrNeg, reducedDistance, trait } = require('ebabel-utils');
 
 module.exports = {
   random,
@@ -27,4 +28,11 @@ module.exports = {
   mockTHREEx,
   mockTHREE,
   mockDataStore,
+  deepCopy,
+  dice,
+  positive,
+  randomPosition,
+  randomPosOrNeg,
+  reducedDistance,
+  trait,
 };

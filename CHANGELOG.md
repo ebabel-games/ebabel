@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.2.0](https://github.com/ebabel-eu/ebabel/releases/tag/v2.2.0)
+- Add ebabel-utils module.
+
 ## [2.1.3](https://github.com/ebabel-eu/ebabel/releases/tag/v2.1.3)
 - Update dependencies.
 
