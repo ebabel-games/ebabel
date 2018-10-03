@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.2.1](https://github.com/ebabel-eu/ebabel/releases/tag/v2.2.1)
+- Update version of ebabel-skybox and ebabel-utils modules.
+
 ## [2.2.0](https://github.com/ebabel-eu/ebabel/releases/tag/v2.2.0)
 - Add ebabel-utils module.
 

@@ -32,6 +32,21 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 
 
 
+<a name="distance"></a>
+
+## distance(i, j) ⇒ <code>number</code>
+`distance`Calculate the distance in 3D space from point "i" x, y, and z coordinates to point "j" x, y, and z coordinates.
+
+**Kind**: global function  
+**Returns**: <code>number</code> - Distance between i and j.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| i | <code>array</code> | Array start position in 3D space e.g. [-10, 5.1, 3] |
+| j | <code>array</code> | Array end position in 3D space e.g. [0, 15.1, -7] |
+
+
+
 <a name="Ido"></a>
 
 ## Ido()
@@ -40,18 +55,13 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 **Kind**: global function  
 
 
-<a name="preventXss"></a>
+<a name="guid"></a>
 
-## preventXss(input) ⇒ <code>string</code>
-`preventXss`Processes an input string to prevent Cross Site Scripting injection attacks (XSS). Returns a safe version of that input.
+## guid() ⇒ <code>string</code>
+`guid`Returns a globally unique id string following the standard guid format.
 
 **Kind**: global function  
-**Returns**: <code>string</code> - Cleaned string that shouldn't run any javascript code if displayed on a webpage.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| input | <code>string</code> | The user input string that needs to be sanitized, to remove the possibility of injecting script of other html tags. |
-
+**Returns**: <code>string</code> - Guid of 36 characters, including hyphens.  
 
 
 <a name="light"></a>
@@ -146,19 +156,18 @@ Convert string hex to integer.</p>
 
 
 
-<a name="randomList"></a>
+<a name="countArrayElements"></a>
 
-## randomList(input) ⇒ <code>object</code>
-`randomList`Returns the subset of a list of x elements from a larger source list.
+## countArrayElements(input)
+`countArrayElements`Returns an object that counts how many times each element is present in a given array.
 
 **Kind**: global function  
-**Returns**: <code>object</code> - 2 arrays in an object: list and rest.  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| input | <code>object</code> | Input properties: source and max. |
-| input.source | <code>array</code> | The source property is the array from which a max number of elements will be randomly selected. |
-| input.max | <code>number</code> | Number of elements that will be randomly selected from input.source |
+| input | <code>array</code> | Array where element occurences need to be counted. |
+
+
 
 
 
@@ -181,40 +190,33 @@ Convert string hex to integer.</p>
 
 
 
-<a name="distance"></a>
+<a name="randomList"></a>
 
-## distance(i, j) ⇒ <code>number</code>
-`distance`Calculate the distance in 3D space from point "i" x, y, and z coordinates to point "j" x, y, and z coordinates.
+## randomList(input) ⇒ <code>object</code>
+`randomList`Returns the subset of a list of x elements from a larger source list.
 
 **Kind**: global function  
-**Returns**: <code>number</code> - Distance between i and j.  
+**Returns**: <code>object</code> - 2 arrays in an object: list and rest.  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| i | <code>array</code> | Array start position in 3D space e.g. [-10, 5.1, 3] |
-| j | <code>array</code> | Array end position in 3D space e.g. [0, 15.1, -7] |
+| input | <code>object</code> | Input properties: source and max. |
+| input.source | <code>array</code> | The source property is the array from which a max number of elements will be randomly selected. |
+| input.max | <code>number</code> | Number of elements that will be randomly selected from input.source |
 
 
 
-<a name="guid"></a>
+<a name="preventXss"></a>
 
-## guid() ⇒ <code>string</code>
-`guid`Returns a globally unique id string following the standard guid format.
-
-**Kind**: global function  
-**Returns**: <code>string</code> - Guid of 36 characters, including hyphens.  
-
-
-<a name="countArrayElements"></a>
-
-## countArrayElements(input)
-`countArrayElements`Returns an object that counts how many times each element is present in a given array.
+## preventXss(input) ⇒ <code>string</code>
+`preventXss`Processes an input string to prevent Cross Site Scripting injection attacks (XSS). Returns a safe version of that input.
 
 **Kind**: global function  
+**Returns**: <code>string</code> - Cleaned string that shouldn't run any javascript code if displayed on a webpage.  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| input | <code>array</code> | Array where element occurences need to be counted. |
+| input | <code>string</code> | The user input string that needs to be sanitized, to remove the possibility of injecting script of other html tags. |
 
 
 
