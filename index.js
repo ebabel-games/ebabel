@@ -12,6 +12,7 @@ const boundingBox = require('ebabel-bounding-box');
 const skybox = require('ebabel-skybox');
 const { hexStringToInt, mockTHREEx, mockTHREE, mockDataStore } = require('ebabel-mocks');
 const { deepCopy, dice, positive, randomPosition, randomPosOrNeg, reducedDistance, trait } = require('ebabel-utils');
+const { keyboardControls, updatePlayerPositionRotation } = require('ebabel-keyboard-controls');
 
 module.exports = {
   random,
@@ -35,4 +36,6 @@ module.exports = {
   randomPosOrNeg,
   reducedDistance,
   trait,
+  keyboardControls,
+  updatePlayerPositionRotation,
 };
