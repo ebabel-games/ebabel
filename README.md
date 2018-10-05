@@ -1,5 +1,5 @@
 # ebabel
-[![Build Status](https://travis-ci.org/ebabel-eu/ebabel.svg?branch=master)](https://travis-ci.org/ebabel-eu/ebabel)
+[![Build Status](https://travis-ci.org/ebabel-games/ebabel.svg?branch=master)](https://travis-ci.org/ebabel-games/ebabel)
 
 Library of re-useable game modules to build web browser HTML5 games.
 
@@ -21,7 +21,8 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 <a name="boundingBox"></a>
 
 ## boundingBox(THREE, mesh)
-`boundingBox`Calculate a 3D bounding box for a THREE.js mesh.
+`boundingBox`
+Calculate a 3D bounding box for a THREE.js mesh.
 
 **Kind**: global function  
 
@@ -35,7 +36,8 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 <a name="distance"></a>
 
 ## distance(i, j) ⇒ <code>number</code>
-`distance`Calculate the distance in 3D space from point "i" x, y, and z coordinates to point "j" x, y, and z coordinates.
+`distance`
+Calculate the distance in 3D space from point "i" x, y, and z coordinates to point "j" x, y, and z coordinates.
 
 **Kind**: global function  
 **Returns**: <code>number</code> - Distance between i and j.  
@@ -50,7 +52,8 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 <a name="Ido"></a>
 
 ## Ido()
-`Ido`Returns a a string that commemorates how many days since Ido died.
+`Ido`
+Returns a a string that commemorates how many days since Ido died.
 
 **Kind**: global function  
 
@@ -58,7 +61,8 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 <a name="guid"></a>
 
 ## guid() ⇒ <code>string</code>
-`guid`Returns a globally unique id string following the standard guid format.
+`guid`
+Returns a globally unique id string following the standard guid format.
 
 **Kind**: global function  
 **Returns**: <code>string</code> - Guid of 36 characters, including hyphens.  
@@ -67,7 +71,8 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 <a name="light"></a>
 
 ## light(input) ⇒ <code>object</code>
-`light`Setup a THREE.js PointLight and add it to the scene.
+`light`
+Setup a THREE.js PointLight and add it to the scene.
 
 **Kind**: global function  
 **Returns**: <code>object</code> - THREE.PointLight instance.  
@@ -86,7 +91,8 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 <a name="random"></a>
 
 ## random(max, min) ⇒ <code>number</code>
-`random`Returns a random integer number from 1 to 100 or from min to max (min is non-inclusive).
+`random`
+Returns a random integer number from 1 to 100 or from min to max (min is non-inclusive).
 
 **Kind**: global function  
 **Returns**: <code>number</code> - Integer between min and max (inclusively)  
@@ -127,25 +133,29 @@ Convert string hex to integer.</p>
 <a name="mockTHREEx"></a>
 
 ## mockTHREEx
-`mockTHREEx`Mock THREEx.js for unit testing purposes.
+`mockTHREEx`
+Mock THREEx.js for unit testing purposes.
 
 **Kind**: global constant  
 <a name="mockTHREE"></a>
 
 ## mockTHREE
-`mockTHREE`Mock THREE.js for unit testing purposes.
+`mockTHREE`
+Mock THREE.js for unit testing purposes.
 
 **Kind**: global constant  
 <a name="mockDataStore"></a>
 
 ## mockDataStore
-`dataStore`Mock dataStore for unit testing purposes.
+`dataStore`
+Mock dataStore for unit testing purposes.
 
 **Kind**: global constant  
 <a name="hexStringToInt"></a>
 
 ## hexStringToInt(input) ⇒ <code>number</code>
-`hexStringToInt`Convert string hex to integer.
+`hexStringToInt`
+Convert string hex to integer.
 
 **Kind**: global function  
 **Returns**: <code>number</code> - Integer conversion.  
@@ -159,7 +169,8 @@ Convert string hex to integer.</p>
 <a name="countArrayElements"></a>
 
 ## countArrayElements(input)
-`countArrayElements`Returns an object that counts how many times each element is present in a given array.
+`countArrayElements`
+Returns an object that counts how many times each element is present in a given array.
 
 **Kind**: global function  
 
@@ -174,7 +185,8 @@ Convert string hex to integer.</p>
 <a name="skybox"></a>
 
 ## skybox(input) ⇒ <code>object</code>
-`Skybox`Setup a skybox mesh and add it to the scene.
+`Skybox`
+Setup a skybox mesh and add it to the scene.
 
 **Kind**: global function  
 **Returns**: <code>object</code> - Skybox mesh.  
@@ -193,7 +205,8 @@ Convert string hex to integer.</p>
 <a name="randomList"></a>
 
 ## randomList(input) ⇒ <code>object</code>
-`randomList`Returns the subset of a list of x elements from a larger source list.
+`randomList`
+Returns the subset of a list of x elements from a larger source list.
 
 **Kind**: global function  
 **Returns**: <code>object</code> - 2 arrays in an object: list and rest.  
@@ -209,7 +222,8 @@ Convert string hex to integer.</p>
 <a name="preventXss"></a>
 
 ## preventXss(input) ⇒ <code>string</code>
-`preventXss`Processes an input string to prevent Cross Site Scripting injection attacks (XSS). Returns a safe version of that input.
+`preventXss`
+Processes an input string to prevent Cross Site Scripting injection attacks (XSS). Returns a safe version of that input.
 
 **Kind**: global function  
 **Returns**: <code>string</code> - Cleaned string that shouldn't run any javascript code if displayed on a webpage.  
