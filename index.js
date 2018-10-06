@@ -23,6 +23,7 @@ const { keyboardControls, updatePlayerPositionRotation } = require('ebabel-keybo
 const light = require('ebabel-light');
 const boundingBox = require('ebabel-bounding-box');
 const skybox = require('ebabel-skybox');
+const themeMusic = require('ebabel-theme-music');
 
 module.exports = {
   random,
@@ -48,4 +49,5 @@ module.exports = {
   trait,
   keyboardControls,
   updatePlayerPositionRotation,
+  themeMusic,
 };

@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.4.0](https://github.com/ebabel-games/ebabel/releases/tag/v2.4.0)
+- Add ebabel-theme-music module.
+
+
 ## [2.3.1](https://github.com/ebabel-games/ebabel/releases/tag/v2.3.1)
 - Remove modules that have been refactored to ebabel-utils.
 
