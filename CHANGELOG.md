@@ -1,6 +1,9 @@
 # Changelog
 
-## [2.3.0](https://github.com/ebabel-games/ebabel/releases/tag/v2.2.1)
+## [2.3.1](https://github.com/ebabel-games/ebabel/releases/tag/v2.3.1)
+- Remove modules that have been refactored to ebabel-utils.
+
+## [2.3.0](https://github.com/ebabel-games/ebabel/releases/tag/v2.3.0)
 - Add ebabel-keyboard-controls module.
 
 ## [2.2.1](https://github.com/ebabel-games/ebabel/releases/tag/v2.2.1)
