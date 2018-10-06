@@ -24,6 +24,7 @@ const light = require('ebabel-light');
 const boundingBox = require('ebabel-bounding-box');
 const skybox = require('ebabel-skybox');
 const themeMusic = require('ebabel-theme-music');
+const soundEffect = require('ebabel-sound-effect');
 
 module.exports = {
   random,
@@ -50,4 +51,5 @@ module.exports = {
   keyboardControls,
   updatePlayerPositionRotation,
   themeMusic,
+  soundEffect,
 };
