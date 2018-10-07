@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.4.2](https://github.com/ebabel-games/ebabel/releases/tag/v2.4.2)
+- Upgrade ebabel-keyboard-controls to version 2.0.1
+
 ## [2.4.1](https://github.com/ebabel-games/ebabel/releases/tag/v2.4.1)
 - Upgrade ebabel-keyboard-controls to version 2.0.0
 

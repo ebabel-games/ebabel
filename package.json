@@ -31,7 +31,7 @@
   "homepage": "https://github.com/ebabel-games/ebabel#readme",
   "dependencies": {
     "ebabel-bounding-box": "^1.0.3",
-    "ebabel-keyboard-controls": "^2.0.0",
+    "ebabel-keyboard-controls": "^2.0.1",
     "ebabel-light": "^1.0.4",
     "ebabel-mocks": "^1.0.7",
     "ebabel-skybox": "^2.1.3",
