@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.0.0](https://github.com/ebabel-games/ebabel/releases/tag/v3.0.0)
+- Merge creation and state into each player and sprite.
+- Update generated documentation.
+
 ## [2.4.2](https://github.com/ebabel-games/ebabel/releases/tag/v2.4.2)
 - Upgrade ebabel-keyboard-controls to version 2.0.1
 
