@@ -36,6 +36,7 @@
     "ebabel-mocks": "^1.0.7",
     "ebabel-skybox": "^2.1.3",
     "ebabel-sound-effect": "^1.0.0",
+    "ebabel-text-sprite": "^1.0.1",
     "ebabel-theme-music": "^1.0.0",
     "ebabel-utils": "^1.1.1"
   },
