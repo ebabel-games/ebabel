@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.4.1](https://github.com/ebabel-games/ebabel/releases/tag/v2.4.1)
+- Upgrade ebabel-keyboard-controls to version 2.0.0
+
 ## [2.4.0](https://github.com/ebabel-games/ebabel/releases/tag/v2.4.0)
 - Add ebabel-theme-music module.
 - Add ebabel-sound-effect module.
