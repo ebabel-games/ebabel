@@ -4,7 +4,7 @@ const {
   hexStringToInt,
   mockTHREEx,
   mockTHREE,
-  mockDataStore,
+  mockEG,
 } = require('ebabel-mocks');
 
 const {
@@ -49,7 +49,7 @@ module.exports = {
   hexStringToInt,
   mockTHREEx,
   mockTHREE,
-  mockDataStore,
+  mockEG,
   deepCopy,
   dice,
   positive,

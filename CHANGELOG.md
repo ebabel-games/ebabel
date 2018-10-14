@@ -1,5 +1,8 @@
 # Changelog
 
+## [4.1.1](https://github.com/ebabel-games/ebabel/releases/tag/v4.1.1)
+- Fix exporting the new mock, EG.
+
 ## [4.1.0](https://github.com/ebabel-games/ebabel/releases/tag/v4.1.0)
 - Upgrade mocks to version 3.0.0
 
