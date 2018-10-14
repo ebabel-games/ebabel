@@ -18,6 +18,94 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 
 
 
+<a name="audio"></a>
+
+## audio(input) ⇒ <code>Object</code>
+`ebabelAudio`Play music or positional sound.
+
+**Kind**: global function  
+**Returns**: <code>Object</code> - Multiple objects and properties: camera, url, listener, sound, and audioLoader.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| input | <code>Object</code> | Object with properties to specify theme music parameters. |
+| input.THREE | <code>Object</code> | Library THREE.js |
+| input.camera | <code>Object</code> | THREE.js camera instance. |
+| input.volume | <code>number</code> | Loudness of the music, ranges from 0 to 1. |
+| input.url | <code>string</code> | Path to the theme music file. |
+| input.distance | <code>number</code> | If this is set we are using positional audio. Distance at which the sound is audible. |
+| input.name | <code>string</code> | Unique name to identify the theme music and listener in THREE.js camera children. |
+| input.loop | <code>boolean</code> | Play theme music in a loop. False by default. |
+| input.autostart | <code>boolean</code> | Stars playing the music as soon as it loads. False by default. |
+
+
+
+<a name="light"></a>
+
+## light(input) ⇒ <code>Object</code>
+`light`
+Setup a THREE.js PointLight and add it to the scene.
+
+**Kind**: global function  
+**Returns**: <code>Object</code> - THREE.PointLight instance.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| input | <code>Object</code> | Parameters and dependencies. |
+| input.THREE | <code>Object</code> | Core library of THREE.js |
+| input.scene | <code>Object</code> | Scene object where the light will be added. |
+| input.color | <code>hex</code> | Dominant color of the light in hexadecima format. Defaults to pure white 0xffffff. |
+| input.position | <code>Array</code> | 3D coordinates of where the light should be placed. Defaults to [1, 250, 1]. |
+| input.name | <code>String</code> | Name of the light. Defaults to 'main-light'. |
+
+
+
+## Functions
+
+<dl>
+<dt><a href="#skybox">skybox(input)</a> ⇒ <code>Object</code></dt>
+<dd><p><code>Skybox</code>
+Setup a skybox mesh and add it to the scene.</p>
+</dd>
+<dt><a href="#userData">userData(size, position)</a></dt>
+<dd><p><code>userData</code>
+Setup skybox default userData.</p>
+</dd>
+</dl>
+
+<a name="skybox"></a>
+
+## skybox(input) ⇒ <code>Object</code>
+`Skybox`
+Setup a skybox mesh and add it to the scene.
+
+**Kind**: global function  
+**Returns**: <code>Object</code> - Skybox mesh.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| input | <code>Object</code> | Parameters and dependencies. |
+| input.THREE | <code>Object</code> | Core library of THREE.js |
+| input.scene | <code>Object</code> | Scene object where the skybox will be added. |
+| input.directions | <code>Array</code> | Array of image paths for all skybox sides, by directions. |
+| input.size | <code>Number</code> | Size of the skybox. Defaults to 10000. |
+| input.position | <code>Array</code> | Position of the skybox as 3D coordinates. Defaults to [0, 0, 0]. |
+
+<a name="userData"></a>
+
+## userData(size, position)
+`userData`
+Setup skybox default userData.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| size | <code>Number</code> | Length of each side of the skybox cube. |
+| position | <code>Array</code> | Coordinates where the skybox is to be positioned: Array of 3 numbers. |
+
+
+
 <a name="boundingBox"></a>
 
 ## boundingBox(THREE, mesh)
@@ -71,23 +159,20 @@ Update the position and rotation of the current player camera based on keyboard 
 
 
 
-<a name="light"></a>
+<a name="textSprite"></a>
 
-## light(input) ⇒ <code>Object</code>
-`light`
-Setup a THREE.js PointLight and add it to the scene.
+## textSprite(input) ⇒ <code>Object</code>
+`ebabelTextSprite`Create a 2D text sprite that can be added to any THREE.js mesh.
 
 **Kind**: global function  
-**Returns**: <code>Object</code> - THREE.PointLight instance.  
+**Returns**: <code>Object</code> - THREE.js sprite that can be added to a mesh.  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| input | <code>Object</code> | Parameters and dependencies. |
-| input.THREE | <code>Object</code> | Core library of THREE.js |
-| input.scene | <code>Object</code> | Scene object where the light will be added. |
-| input.color | <code>hex</code> | Dominant color of the light in hexadecima format. Defaults to pure white 0xffffff. |
-| input.position | <code>Array</code> | 3D coordinates of where the light should be placed. Defaults to [1, 250, 1]. |
-| input.name | <code>String</code> | Name of the light. Defaults to 'main-light'. |
+| input | <code>Object</code> | Collection of input properties. |
+| input.THREE | <code>Object</code> | Library THREE.js object. |
+| input.canvas | <code>Object</code> | DOM canvas, i.e. document.createElement('canvas') |
+| input.text | <code>string</code> | String of text to display above a sprite. |
 
 
 
@@ -146,98 +231,6 @@ Convert string hex to integer.</p>
 | Param | Type | Description |
 | --- | --- | --- |
 | input | <code>string</code> | Input hexadecimal color in string format, i.e. #ff0099 |
-
-
-
-## Functions
-
-<dl>
-<dt><a href="#skybox">skybox(input)</a> ⇒ <code>Object</code></dt>
-<dd><p><code>Skybox</code>
-Setup a skybox mesh and add it to the scene.</p>
-</dd>
-<dt><a href="#userData">userData(size, position)</a></dt>
-<dd><p><code>userData</code>
-Setup skybox default userData.</p>
-</dd>
-</dl>
-
-<a name="skybox"></a>
-
-## skybox(input) ⇒ <code>Object</code>
-`Skybox`
-Setup a skybox mesh and add it to the scene.
-
-**Kind**: global function  
-**Returns**: <code>Object</code> - Skybox mesh.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| input | <code>Object</code> | Parameters and dependencies. |
-| input.THREE | <code>Object</code> | Core library of THREE.js |
-| input.scene | <code>Object</code> | Scene object where the skybox will be added. |
-| input.directions | <code>Array</code> | Array of image paths for all skybox sides, by directions. |
-| input.size | <code>Number</code> | Size of the skybox. Defaults to 10000. |
-| input.position | <code>Array</code> | Position of the skybox as 3D coordinates. Defaults to [0, 0, 0]. |
-
-<a name="userData"></a>
-
-## userData(size, position)
-`userData`
-Setup skybox default userData.
-
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| size | <code>Number</code> | Length of each side of the skybox cube. |
-| position | <code>Array</code> | Coordinates where the skybox is to be positioned: Array of 3 numbers. |
-
-
-
-<a name="soundEffect"></a>
-
-## soundEffect()
-`ebabelSoundEffect`Attach a sound effect to a 3D mesh, like an npc for example.
-
-**Kind**: global function  
-
-
-<a name="textSprite"></a>
-
-## textSprite(input) ⇒ <code>Object</code>
-`ebabelTextSprite`Create a 2D text sprite that can be added to any THREE.js mesh.
-
-**Kind**: global function  
-**Returns**: <code>Object</code> - THREE.js sprite that can be added to a mesh.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| input | <code>Object</code> | Collection of input properties. |
-| input.THREE | <code>Object</code> | Library THREE.js object. |
-| input.canvas | <code>Object</code> | DOM canvas, i.e. document.createElement('canvas') |
-| input.text | <code>string</code> | String of text to display above a sprite. |
-
-
-
-<a name="themeMusic"></a>
-
-## themeMusic(input) ⇒ <code>Object</code>
-`ebabelThemeMusic`Attach audio to the player 3D camera.
-
-**Kind**: global function  
-**Returns**: <code>Object</code> - Multiple objects and properties: camera, url, listener, sound, and audioLoader.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| input | <code>Object</code> | Object with properties to specify theme music parameters. |
-| input.THREE | <code>Object</code> | Library THREE.js |
-| input.camera | <code>Object</code> | THREE.js camera instance. |
-| input.volume | <code>number</code> | Loudness of the music, ranges from 0 to 1. |
-| input.url | <code>string</code> | Path to the theme music file. |
-| input.name | <code>string</code> | Unique name to identify the theme music in THREE.js camera children. |
-| input.loop | <code>boolean</code> | Play theme music in a loop. True by default. |
-| input.autostart | <code>boolean</code> | Stars playing the music as soon as it loads. True by default. |
 
 
 

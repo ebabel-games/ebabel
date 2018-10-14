@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.0.0](https://github.com/ebabel-games/ebabel/releases/tag/v4.0.0)
+- Remove ebabel-theme-music and ebabel-sound-effect modules.
+- Add ebabel-audio module.
+
 ## [3.0.0](https://github.com/ebabel-games/ebabel/releases/tag/v3.0.0)
 - Merge creation and state into each player and sprite.
 - Update generated documentation.
