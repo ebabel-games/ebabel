@@ -1,5 +1,8 @@
 # Changelog
 
+## [4.1.0](https://github.com/ebabel-games/ebabel/releases/tag/v4.1.0)
+- Upgrade mocks to version 3.0.0
+
 ## [4.0.0](https://github.com/ebabel-games/ebabel/releases/tag/v4.0.0)
 - Remove ebabel-theme-music and ebabel-sound-effect modules.
 - Add ebabel-audio module.

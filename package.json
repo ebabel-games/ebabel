@@ -1,6 +1,6 @@
 {
   "name": "ebabel",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "Library of reusable game modules to build HTML5 games.",
   "main": "index.js",
   "engines": {
@@ -34,7 +34,7 @@
     "ebabel-bounding-box": "^1.0.4",
     "ebabel-keyboard-controls": "^3.0.0",
     "ebabel-light": "^1.0.5",
-    "ebabel-mocks": "^2.0.0",
+    "ebabel-mocks": "^3.0.0",
     "ebabel-skybox": "^2.1.4",
     "ebabel-text-sprite": "^1.0.1",
     "ebabel-utils": "^1.1.1"

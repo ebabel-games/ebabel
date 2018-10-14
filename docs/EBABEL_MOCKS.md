@@ -1,9 +1,9 @@
 ## Constants
 
 <dl>
-<dt><a href="#mockDataStore">mockDataStore</a></dt>
-<dd><p><code>dataStore</code>
-Mock dataStore for unit testing purposes.</p>
+<dt><a href="#mockEG">mockEG</a></dt>
+<dd><p><code>EG</code>
+Mock EG (eBabel Games) for unit testing purposes.</p>
 </dd>
 <dt><a href="#mockTHREE">mockTHREE</a></dt>
 <dd><p><code>mockTHREE</code>
@@ -24,10 +24,10 @@ Convert string hex to integer.</p>
 </dd>
 </dl>
 
-<a name="mockDataStore"></a>
+<a name="mockEG"></a>
 
-## mockDataStore
-`dataStore`Mock dataStore for unit testing purposes.
+## mockEG
+`EG`Mock EG (eBabel Games) for unit testing purposes.
 
 **Kind**: global constant  
 <a name="mockTHREE"></a>

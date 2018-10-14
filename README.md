@@ -40,6 +40,64 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 
 
 
+## Constants
+
+<dl>
+<dt><a href="#mockEG">mockEG</a></dt>
+<dd><p><code>EG</code>
+Mock EG (eBabel Games) for unit testing purposes.</p>
+</dd>
+<dt><a href="#mockTHREE">mockTHREE</a></dt>
+<dd><p><code>mockTHREE</code>
+Mock THREE.js for unit testing purposes.</p>
+</dd>
+<dt><a href="#mockTHREEx">mockTHREEx</a></dt>
+<dd><p><code>mockTHREEx</code>
+Mock THREEx.js for unit testing purposes.</p>
+</dd>
+</dl>
+
+## Functions
+
+<dl>
+<dt><a href="#hexStringToInt">hexStringToInt(input)</a> ⇒ <code>number</code></dt>
+<dd><p><code>hexStringToInt</code>
+Convert string hex to integer.</p>
+</dd>
+</dl>
+
+<a name="mockEG"></a>
+
+## mockEG
+`EG`Mock EG (eBabel Games) for unit testing purposes.
+
+**Kind**: global constant  
+<a name="mockTHREE"></a>
+
+## mockTHREE
+`mockTHREE`Mock THREE.js for unit testing purposes.
+
+**Kind**: global constant  
+<a name="mockTHREEx"></a>
+
+## mockTHREEx
+`mockTHREEx`Mock THREEx.js for unit testing purposes.
+
+**Kind**: global constant  
+<a name="hexStringToInt"></a>
+
+## hexStringToInt(input) ⇒ <code>number</code>
+`hexStringToInt`Convert string hex to integer.
+
+**Kind**: global function  
+**Returns**: <code>number</code> - Integer conversion.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| input | <code>string</code> | Input hexadecimal color in string format, i.e. #ff0099 |
+
+
+
 <a name="light"></a>
 
 ## light(input) ⇒ <code>Object</code>
@@ -57,6 +115,61 @@ Setup a THREE.js PointLight and add it to the scene.
 | input.color | <code>hex</code> | Dominant color of the light in hexadecima format. Defaults to pure white 0xffffff. |
 | input.position | <code>Array</code> | 3D coordinates of where the light should be placed. Defaults to [1, 250, 1]. |
 | input.name | <code>String</code> | Name of the light. Defaults to 'main-light'. |
+
+
+
+<a name="textSprite"></a>
+
+## textSprite(input) ⇒ <code>Object</code>
+`ebabelTextSprite`Create a 2D text sprite that can be added to any THREE.js mesh.
+
+**Kind**: global function  
+**Returns**: <code>Object</code> - THREE.js sprite that can be added to a mesh.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| input | <code>Object</code> | Collection of input properties. |
+| input.THREE | <code>Object</code> | Library THREE.js object. |
+| input.canvas | <code>Object</code> | DOM canvas, i.e. document.createElement('canvas') |
+| input.text | <code>string</code> | String of text to display above a sprite. |
+
+
+
+## Functions
+
+<dl>
+<dt><a href="#updatePlayerPositionRotation">updatePlayerPositionRotation(camera, dataStore)</a></dt>
+<dd><p><code>updatePlayerPositionRotation</code>
+Update the position and rotation of the current player camera.</p>
+</dd>
+<dt><a href="#keyboardControls">keyboardControls(dataStore)</a></dt>
+<dd><p><code>keyboardControls</code>
+Update the position and rotation of the current player camera based on keyboard keys pressed up or down.</p>
+</dd>
+</dl>
+
+<a name="updatePlayerPositionRotation"></a>
+
+## updatePlayerPositionRotation(camera, dataStore)
+`updatePlayerPositionRotation`Update the position and rotation of the current player camera.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| camera | <code>Object</code> | THREE.js camera. |
+| dataStore | <code>Object</code> | Central store of state data. |
+
+<a name="keyboardControls"></a>
+
+## keyboardControls(dataStore)
+`keyboardControls`Update the position and rotation of the current player camera based on keyboard keys pressed up or down.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| dataStore | <code>Object</code> | Central store of state data. |
 
 
 
@@ -103,134 +216,6 @@ Setup skybox default userData.
 | --- | --- | --- |
 | size | <code>Number</code> | Length of each side of the skybox cube. |
 | position | <code>Array</code> | Coordinates where the skybox is to be positioned: Array of 3 numbers. |
-
-
-
-<a name="boundingBox"></a>
-
-## boundingBox(THREE, mesh)
-`boundingBox`
-Calculate a 3D bounding box for a THREE.js mesh.
-
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| THREE | <code>object</code> | Core library of THREE.js |
-| mesh | <code>string</code> | 3D THREE.js object for a mesh that needs a bounding box calculated. |
-
-
-
-## Functions
-
-<dl>
-<dt><a href="#updatePlayerPositionRotation">updatePlayerPositionRotation(camera, dataStore)</a></dt>
-<dd><p><code>updatePlayerPositionRotation</code>
-Update the position and rotation of the current player camera.</p>
-</dd>
-<dt><a href="#keyboardControls">keyboardControls(dataStore)</a></dt>
-<dd><p><code>keyboardControls</code>
-Update the position and rotation of the current player camera based on keyboard keys pressed up or down.</p>
-</dd>
-</dl>
-
-<a name="updatePlayerPositionRotation"></a>
-
-## updatePlayerPositionRotation(camera, dataStore)
-`updatePlayerPositionRotation`Update the position and rotation of the current player camera.
-
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| camera | <code>Object</code> | THREE.js camera. |
-| dataStore | <code>Object</code> | Central store of state data. |
-
-<a name="keyboardControls"></a>
-
-## keyboardControls(dataStore)
-`keyboardControls`Update the position and rotation of the current player camera based on keyboard keys pressed up or down.
-
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| dataStore | <code>Object</code> | Central store of state data. |
-
-
-
-<a name="textSprite"></a>
-
-## textSprite(input) ⇒ <code>Object</code>
-`ebabelTextSprite`Create a 2D text sprite that can be added to any THREE.js mesh.
-
-**Kind**: global function  
-**Returns**: <code>Object</code> - THREE.js sprite that can be added to a mesh.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| input | <code>Object</code> | Collection of input properties. |
-| input.THREE | <code>Object</code> | Library THREE.js object. |
-| input.canvas | <code>Object</code> | DOM canvas, i.e. document.createElement('canvas') |
-| input.text | <code>string</code> | String of text to display above a sprite. |
-
-
-
-## Constants
-
-<dl>
-<dt><a href="#mockDataStore">mockDataStore</a></dt>
-<dd><p><code>dataStore</code>
-Mock dataStore for unit testing purposes.</p>
-</dd>
-<dt><a href="#mockTHREE">mockTHREE</a></dt>
-<dd><p><code>mockTHREE</code>
-Mock THREE.js for unit testing purposes.</p>
-</dd>
-<dt><a href="#mockTHREEx">mockTHREEx</a></dt>
-<dd><p><code>mockTHREEx</code>
-Mock THREEx.js for unit testing purposes.</p>
-</dd>
-</dl>
-
-## Functions
-
-<dl>
-<dt><a href="#hexStringToInt">hexStringToInt(input)</a> ⇒ <code>number</code></dt>
-<dd><p><code>hexStringToInt</code>
-Convert string hex to integer.</p>
-</dd>
-</dl>
-
-<a name="mockDataStore"></a>
-
-## mockDataStore
-`dataStore`Mock dataStore for unit testing purposes.
-
-**Kind**: global constant  
-<a name="mockTHREE"></a>
-
-## mockTHREE
-`mockTHREE`Mock THREE.js for unit testing purposes.
-
-**Kind**: global constant  
-<a name="mockTHREEx"></a>
-
-## mockTHREEx
-`mockTHREEx`Mock THREEx.js for unit testing purposes.
-
-**Kind**: global constant  
-<a name="hexStringToInt"></a>
-
-## hexStringToInt(input) ⇒ <code>number</code>
-`hexStringToInt`Convert string hex to integer.
-
-**Kind**: global function  
-**Returns**: <code>number</code> - Integer conversion.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| input | <code>string</code> | Input hexadecimal color in string format, i.e. #ff0099 |
 
 
 
@@ -463,5 +448,20 @@ Throw 3 dices.
 
 **Kind**: global function  
 **Returns**: <code>number</code> - Return a random integer from 3 to 18.  
+
+
+<a name="boundingBox"></a>
+
+## boundingBox(THREE, mesh)
+`boundingBox`
+Calculate a 3D bounding box for a THREE.js mesh.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| THREE | <code>object</code> | Core library of THREE.js |
+| mesh | <code>string</code> | 3D THREE.js object for a mesh that needs a bounding box calculated. |
+
 
 
