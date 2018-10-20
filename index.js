@@ -5,6 +5,9 @@ const {
   mockTHREEx,
   mockTHREE,
   mockEG,
+  mockCanvas,
+  mockSocket,
+  mockIo,
 } = require('ebabel-mocks');
 
 const {
@@ -50,6 +53,9 @@ module.exports = {
   mockTHREEx,
   mockTHREE,
   mockEG,
+  mockCanvas,
+  mockSocket,
+  mockIo,
   deepCopy,
   dice,
   positive,

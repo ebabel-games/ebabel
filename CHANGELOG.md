@@ -1,5 +1,8 @@
 # Changelog
 
+## [4.2.0](https://github.com/ebabel-games/ebabel/releases/tag/v4.2.0)
+- Add mocks for socket and io.
+
 ## [4.1.1](https://github.com/ebabel-games/ebabel/releases/tag/v4.1.1)
 - Fix exporting the new mock, EG.
 
