@@ -37,6 +37,7 @@ const boundingBox = require('ebabel-bounding-box');
 const skybox = require('ebabel-skybox');
 const audio = require('ebabel-audio');
 const textSprite = require('ebabel-text-sprite');
+const Sound = require('ebabel-sound');
 
 module.exports = {
   random,
@@ -67,4 +68,5 @@ module.exports = {
   updatePlayerPositionRotation,
   audio,
   textSprite,
+  Sound,
 };

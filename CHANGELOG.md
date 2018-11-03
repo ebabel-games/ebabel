@@ -1,5 +1,8 @@
 # Changelog
 
+## [4.3.0](https://github.com/ebabel-games/ebabel/releases/tag/v4.3.0)
+- Add ebabel-sound module.
+
 ## [4.2.0](https://github.com/ebabel-games/ebabel/releases/tag/v4.2.0)
 - Add mocks for socket and io.
 
