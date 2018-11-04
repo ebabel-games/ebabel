@@ -1,5 +1,5 @@
 # ebabel
-[![Build Status](https://travis-ci.org/ebabel-games/ebabel.svg?branch=master)](https://travis-ci.org/ebabel-games/ebabel)
+[![Build Status](https://travis-ci.org/ebabel-games/ebabel.svg?branch=master)](https://travis-ci.org/ebabel-games/ebabel) [![dependencies Status](https://david-dm.org/ebabel-games/ebabel.svg)](https://david-dm.org/ebabel-games/ebabel.svg)
 
 Library of re-useable game modules to build web browser HTML5 games.
 
@@ -37,6 +37,26 @@ First of all, thank you! Please see the [contributing guidelines](CONTRIBUTING.m
 | input.name | <code>string</code> | Unique name to identify the theme music and listener in THREE.js camera children. |
 | input.loop | <code>boolean</code> | Play theme music in a loop. False by default. |
 | input.autostart | <code>boolean</code> | Stars playing the music as soon as it loads. False by default. |
+
+
+
+<a name="light"></a>
+
+## light(input) ⇒ <code>Object</code>
+`light`
+Setup a THREE.js PointLight and add it to the scene.
+
+**Kind**: global function  
+**Returns**: <code>Object</code> - THREE.PointLight instance.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| input | <code>Object</code> | Parameters and dependencies. |
+| input.THREE | <code>Object</code> | Core library of THREE.js |
+| input.scene | <code>Object</code> | Scene object where the light will be added. |
+| input.color | <code>hex</code> | Dominant color of the light in hexadecima format. Defaults to pure white 0xffffff. |
+| input.position | <code>Array</code> | 3D coordinates of where the light should be placed. Defaults to [1, 250, 1]. |
+| input.name | <code>String</code> | Name of the light. Defaults to 'main-light'. |
 
 
 
@@ -98,81 +118,6 @@ Convert string hex to integer.</p>
 
 
 
-<a name="light"></a>
-
-## light(input) ⇒ <code>Object</code>
-`light`
-Setup a THREE.js PointLight and add it to the scene.
-
-**Kind**: global function  
-**Returns**: <code>Object</code> - THREE.PointLight instance.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| input | <code>Object</code> | Parameters and dependencies. |
-| input.THREE | <code>Object</code> | Core library of THREE.js |
-| input.scene | <code>Object</code> | Scene object where the light will be added. |
-| input.color | <code>hex</code> | Dominant color of the light in hexadecima format. Defaults to pure white 0xffffff. |
-| input.position | <code>Array</code> | 3D coordinates of where the light should be placed. Defaults to [1, 250, 1]. |
-| input.name | <code>String</code> | Name of the light. Defaults to 'main-light'. |
-
-
-
-<a name="textSprite"></a>
-
-## textSprite(input) ⇒ <code>Object</code>
-`ebabelTextSprite`Create a 2D text sprite that can be added to any THREE.js mesh.
-
-**Kind**: global function  
-**Returns**: <code>Object</code> - THREE.js sprite that can be added to a mesh.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| input | <code>Object</code> | Collection of input properties. |
-| input.THREE | <code>Object</code> | Library THREE.js object. |
-| input.canvas | <code>Object</code> | DOM canvas, i.e. document.createElement('canvas') |
-| input.text | <code>string</code> | String of text to display above a sprite. |
-
-
-
-## Functions
-
-<dl>
-<dt><a href="#updatePlayerPositionRotation">updatePlayerPositionRotation(camera, dataStore)</a></dt>
-<dd><p><code>updatePlayerPositionRotation</code>
-Update the position and rotation of the current player camera.</p>
-</dd>
-<dt><a href="#keyboardControls">keyboardControls(dataStore)</a></dt>
-<dd><p><code>keyboardControls</code>
-Update the position and rotation of the current player camera based on keyboard keys pressed up or down.</p>
-</dd>
-</dl>
-
-<a name="updatePlayerPositionRotation"></a>
-
-## updatePlayerPositionRotation(camera, dataStore)
-`updatePlayerPositionRotation`Update the position and rotation of the current player camera.
-
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| camera | <code>Object</code> | THREE.js camera. |
-| dataStore | <code>Object</code> | Central store of state data. |
-
-<a name="keyboardControls"></a>
-
-## keyboardControls(dataStore)
-`keyboardControls`Update the position and rotation of the current player camera based on keyboard keys pressed up or down.
-
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| dataStore | <code>Object</code> | Central store of state data. |
-
-
-
 ## Functions
 
 <dl>
@@ -216,6 +161,67 @@ Setup skybox default userData.
 | --- | --- | --- |
 | size | <code>Number</code> | Length of each side of the skybox cube. |
 | position | <code>Array</code> | Coordinates where the skybox is to be positioned: Array of 3 numbers. |
+
+
+
+<a name="boundingBox"></a>
+
+## boundingBox(THREE, mesh)
+`boundingBox`
+Calculate a 3D bounding box for a THREE.js mesh.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| THREE | <code>object</code> | Core library of THREE.js |
+| mesh | <code>string</code> | 3D THREE.js object for a mesh that needs a bounding box calculated. |
+
+
+
+<a name="Sound"></a>
+
+## Sound
+`ebabelSound`Generate a single sound in the browser without any binary file. Uses the Web Audio API.
+
+**Kind**: global class  
+
+
+## Functions
+
+<dl>
+<dt><a href="#updatePlayerPositionRotation">updatePlayerPositionRotation(camera, dataStore)</a></dt>
+<dd><p><code>updatePlayerPositionRotation</code>
+Update the position and rotation of the current player camera.</p>
+</dd>
+<dt><a href="#keyboardControls">keyboardControls(dataStore)</a></dt>
+<dd><p><code>keyboardControls</code>
+Update the position and rotation of the current player camera based on keyboard keys pressed up or down.</p>
+</dd>
+</dl>
+
+<a name="updatePlayerPositionRotation"></a>
+
+## updatePlayerPositionRotation(camera, dataStore)
+`updatePlayerPositionRotation`Update the position and rotation of the current player camera.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| camera | <code>Object</code> | THREE.js camera. |
+| dataStore | <code>Object</code> | Central store of state data. |
+
+<a name="keyboardControls"></a>
+
+## keyboardControls(dataStore)
+`keyboardControls`Update the position and rotation of the current player camera based on keyboard keys pressed up or down.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| dataStore | <code>Object</code> | Central store of state data. |
 
 
 
@@ -450,18 +456,20 @@ Throw 3 dices.
 **Returns**: <code>number</code> - Return a random integer from 3 to 18.  
 
 
-<a name="boundingBox"></a>
+<a name="textSprite"></a>
 
-## boundingBox(THREE, mesh)
-`boundingBox`
-Calculate a 3D bounding box for a THREE.js mesh.
+## textSprite(input) ⇒ <code>Object</code>
+`ebabelTextSprite`Create a 2D text sprite that can be added to any THREE.js mesh.
 
 **Kind**: global function  
+**Returns**: <code>Object</code> - THREE.js sprite that can be added to a mesh.  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| THREE | <code>object</code> | Core library of THREE.js |
-| mesh | <code>string</code> | 3D THREE.js object for a mesh that needs a bounding box calculated. |
+| input | <code>Object</code> | Collection of input properties. |
+| input.THREE | <code>Object</code> | Library THREE.js object. |
+| input.canvas | <code>Object</code> | DOM canvas, i.e. document.createElement('canvas') |
+| input.text | <code>string</code> | String of text to display above a sprite. |
 
 
 

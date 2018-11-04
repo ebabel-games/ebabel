@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ebabel-games/ebabel.svg?branch=master)](https://travis-ci.org/ebabel-games/ebabel)
+[![Build Status](https://travis-ci.org/ebabel-games/ebabel.svg?branch=master)](https://travis-ci.org/ebabel-games/ebabel) [![dependencies Status](https://david-dm.org/ebabel-games/ebabel.svg)](https://david-dm.org/ebabel-games/ebabel.svg)
 
 Library of re-useable game modules to build web browser HTML5 games.
 
